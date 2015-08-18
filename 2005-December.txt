@@ -1,0 +1,260 @@
+From zapoutix at gmail.com  Tue Dec  6 19:15:01 2005
+From: zapoutix at gmail.com (Zapoutix)
+Date: Tue, 6 Dec 2005 19:15:01 +0100
+Subject: [Ziahttpd-developers] next meeting.
+Message-ID: <ddda69650512061015k1772b426vf018dba3487265f8@mail.gmail.com>
+
+hi all,
+
+for some of you long time not seen...and long time not talked about ZIA, but
+if i remenber ZIA project is quite important no ?
+sometimes i am thinking if we really a group of 5 persons.
+Fabien and I are a bit fed up of you .. nobody works.
+That why is better to organize a meet before "la presoutenance 2" for talk
+about this problem and work we did.
+
+witch date is  better for you ?, for mei think on Monday 12/12/2005 can be
+nice.
+
+tell me if you cann't and would like another date for the meeting.
+
+Math
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051206/0e546c9c/attachment.html>
+
+From vincimouse at gmail.com  Tue Dec  6 21:34:29 2005
+From: vincimouse at gmail.com (Vincimouse)
+Date: Tue, 6 Dec 2005 12:34:29 -0800
+Subject: [Ziahttpd-developers] next meeting.
+In-Reply-To: <ddda69650512061015k1772b426vf018dba3487265f8@mail.gmail.com>
+References: <ddda69650512061015k1772b426vf018dba3487265f8@mail.gmail.com>
+Message-ID: <6c660c750512061234n7c6e71f7t9c799abc5f2ec58d@mail.gmail.com>
+
+Ok.. no prob, tomorrow.
+At 11 o'clock PM? or 12 or 13 ?
+
+
+On 12/6/05, Zapoutix <zapoutix at gmail.com> wrote:
+>
+> hi all,
+>
+> for some of you long time not seen...and long time not talked about ZIA,
+> but if i remenber ZIA project is quite important no ?
+> sometimes i am thinking if we really a group of 5 persons.
+> Fabien and I are a bit fed up of you .. nobody works.
+> That why is better to organize a meet before "la presoutenance 2" for talk
+> about this problem and work we did.
+>
+> witch date is  better for you ?, for mei think on Monday 12/12/2005 can be
+> nice.
+>
+> tell me if you cann't and would like another date for the meeting.
+>
+> Math
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051206/874eab0b/attachment.html>
+
+From epidihax at gmail.com  Tue Dec  6 21:34:32 2005
+From: epidihax at gmail.com (Jean-Philippe BOSQUER)
+Date: Tue, 6 Dec 2005 21:34:32 +0100
+Subject: [Ziahttpd-developers] Meeting
+Message-ID: <6e55508d0512061234t3081b181s9266d67966060c1@mail.gmail.com>
+
+I am available on Monday 12/12/2005
+but we can make the meeting Wednesday 06/12/2005 in afternoon.
+
+
+--
+-----------~~=oOo=~~-----------
+BOSQUER Jean-Philippe
+{Epitech} / Arkema
+Mobile: 0661921939
+Mail: bosque_j at evabop.net
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051206/341aecde/attachment.html>
+
+From prof_ringo at hotmail.com  Tue Dec  6 22:30:34 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Tue, 06 Dec 2005 21:30:34 +0000
+Subject: [Ziahttpd-developers] Re : next meeting
+Message-ID: <BAY102-F1496A68DBAF210AE09CE83E6400@phx.gbl>
+
+I am ok for tomorrow afternoon.
+
+
+
+
+From texane at gmail.com  Wed Dec  7 00:06:17 2005
+From: texane at gmail.com (lementec fabien)
+Date: Wed, 7 Dec 2005 00:06:17 +0100
+Subject: [Ziahttpd-developers] Hop
+Message-ID: <af0bb1020512061506n30eb6153r14f195d14e6c60d3@mail.gmail.com>
+
+Be here in the afternoon tomorrow, and we will organize a meeting.
+Bye,
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051207/1311857c/attachment.html>
+
+From texane at gmail.com  Tue Dec 13 14:53:36 2005
+From: texane at gmail.com (lementec fabien)
+Date: Tue, 13 Dec 2005 14:53:36 +0100
+Subject: [Ziahttpd-developers] Compte rendu soutenance
+Message-ID: <af0bb1020512130553o5af28f0dve57952abfdd3acaf@mail.gmail.com>
+
+Salut, tout le monde,
+exceptionnellement en francais, comme ca pas d'ambiguites,
+mais ca sera exceptionnel.
+
+On a donc passe la soutenance de ce matin.
+On va repartir d'un bon pied pour le reste de l'annee
+en ce qui concerne le zia.
+Maintenant, meme si on s'en est tire plutot bien
+a la soutenance, ca ne marchera plus comme
+avant, a savoir que ceux qui ne font rien n'auront
+pas de points(c'est plutot normal).
+
+D'apres ce matin, voila ce qu'on va faire:
+Vincent et jp sur les tests: redigez une doc qui explique
+comment on doit acceder a vos trucs, vous etes libres de
+beaucoup de choses, mais lisez bien la rfc pour savoir quoi
+tester, posez des questions ect...
+Xav sur conf et logger, ca va etre super utile parce nos
+perfs sont plutot cata, entre autre grace a nos cout....
+Mat refonte + voir selon la future api.
+Moi refonte et reseau pour que nos perfs ne soient pas
+aussi pourries que maintenant, et reimplementation selon
+l'api.
+
+A la fin de chaque journee de taff,  chacun veillera a poster
+l avancee de son taff sur la ml; C'est ce qui servira
+a chacun de voir si Untel bosse ou non, et comme ca
+plus besoin de reunion, sauf dans certains cas...
+Il n'est  donc plus question de taffer la veille des reunions
+(ou de ne plus taffer du tout); Il est pas non plus question
+de rusher comme des fous des ce soir, c'est un travail de long
+terme (-> avril, soient un peu plus de 3 mois). Il faut donc etre
+regulier.
+
+Voila donc, y a des choses qu on repetera plus a partir de maintenant
+parce qu on veut pas passer du temps a gerer des personnes; Si
+on bosse ca ira, si qqu un ne bosse pas il aura 0, et c'est pas negociable
+(cf le sujet).
+
+Va y avoir des vacances plus ou moins longues, on n'est pas tenu
+de bosser pendant ce temps, mais si vous faites des trucs postez les.
+
+Voilou, sur ce bonne journee a vous,
+et si on se revoit pas ... bonnes fetes ;)
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051213/013db52b/attachment.html>
+
+From prof_ringo at hotmail.com  Sun Dec 18 13:54:15 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Sun, 18 Dec 2005 12:54:15 +0000
+Subject: [Ziahttpd-developers] getopt
+Message-ID: <BAY102-F25451BE86DF333F2F96C88E63C0@phx.gbl>
+
+I have made the getopt function, she works like the unix function (exactly 
+the same prototype).
+She is portable, but maybe you prefere use the unix version on unix 
+environment that why I haven't implement it on the "branche".
+
+I think that she must be call in the main function (not by the ConfManager).
+
+If you want implement it you must take this both file :
+Zia\ConfManager tmp (for test)\src\Getopt.cpp
+Zia\ConfManager tmp (for test)\include\Getopt.h
+
+PS : We can build in C (but linking doesn't work on my test project).
+
+
+
+
+From prof_ringo at hotmail.com  Mon Dec 26 18:14:45 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Mon, 26 Dec 2005 17:14:45 +0000
+Subject: [Ziahttpd-developers] logger
+Message-ID: <BAY102-F39D175AC489C29CF389413E6340@phx.gbl>
+
+I began the logger.
+
+For the moment all the messages goes in the console.
+
+There are 4 levels for the posting messages, all, the warnings and the 
+errors, error only and finally none.
+
+Code is generated only for the messages which can be posted, but that works 
+only if the options of optimization of the compiler are activated (not in 
+debug mode).
+
+I started to put the bases for log the messages in a file or other (class 
+abstract).
+
+It will remain me has to also see for the operator < < (normally 
+optimizations will serront also possible).
+
+
+
+
+From prof_ringo at hotmail.com  Tue Dec 27 16:53:21 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Tue, 27 Dec 2005 15:53:21 +0000
+Subject: [Ziahttpd-developers] Logger
+Message-ID: <BAY102-F27D2657293B8ABB17A52DE6370@phx.gbl>
+
+It does not remain me which the class has to create to manage flows towards 
+files, that for the final one is already done.
+
+Before calling the function to write the message, it is necessary to record 
+flow to be used with the method SetFlow(int flag_level, ManageFlow &);.
+
+To change flow, it is enough to point out this method, all the authorities 
+of flow will destroyed at the exit of the program (perhaps that with a smart 
+to point that tightened better).
+
+Here the abstract class:
+
+class public ManageFlow
+{
+public:
+    virtual bool Write(std::string sStr) = 0;
+};
+
+
+
+
+From prof_ringo at hotmail.com  Tue Dec 27 17:36:49 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Tue, 27 Dec 2005 16:36:49 +0000
+Subject: [Ziahttpd-developers] logger
+Message-ID: <BAY102-F216206BAFD62EB0AF170F9E6370@phx.gbl>
+
+I have done FlowFile. hmm I know it was very easy (4 lines lol)
+
+
+
+
+From prof_ringo at hotmail.com  Tue Dec 27 17:42:12 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Tue, 27 Dec 2005 16:42:12 +0000
+Subject: [Ziahttpd-developers] logger
+Message-ID: <BAY102-F2815D5C2D4B80A0FD79A1FE6370@phx.gbl>
+
+I have forgotten that if you want change the priority you must change this 
+line :
+#define	LOGGER_STATE	L_ALL
+in file Logger.hh.
+
+
+
+

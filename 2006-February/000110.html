@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Ziahttpd-developers] Hi all
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/ziahttpd-developers/2006-February/index.html" >
+   <LINK REL="made" HREF="mailto:ziahttpd-developers%40lists.berlios.de?Subject=Re%3A%20%5BZiahttpd-developers%5D%20Hi%20all&In-Reply-To=%3Caf0bb1020602220757p45f8580jb98a51ba46af8793%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000109.html">
+   <LINK REL="Next"  HREF="000111.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Ziahttpd-developers] Hi all</H1>
+    <B>lementec fabien</B> 
+    <A HREF="mailto:ziahttpd-developers%40lists.berlios.de?Subject=Re%3A%20%5BZiahttpd-developers%5D%20Hi%20all&In-Reply-To=%3Caf0bb1020602220757p45f8580jb98a51ba46af8793%40mail.gmail.com%3E"
+       TITLE="[Ziahttpd-developers] Hi all">texane at gmail.com
+       </A><BR>
+    <I>Wed Feb 22 16:57:12 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000109.html">[Ziahttpd-developers] Rapport sous win
+</A></li>
+        <LI>Next message: <A HREF="000111.html">[Ziahttpd-developers] zia advances
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#110">[ date ]</a>
+              <a href="thread.html#110">[ thread ]</a>
+              <a href="subject.html#110">[ subject ]</a>
+              <a href="author.html#110">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>For thoses interested in working on the project, here
+are some topics:
+1) we have implemented a kind of cgi support, and the
+directory listing is to be done via a simple cgi script
+that turns a directory(for example &quot;toto/&quot;) into a browsable
+html page. Currently, it's very minimalist, but if someone
+wants to improve it, let me know and i will tell you how
+to do(via the ml): It s very easy to implement and very useful,
+so...
+2)using ssh, try to do a test that connect on other machine
+and load the server with connection. Then notes the number
+of client connected, the number of time a request takes to
+success...
+
+
+For mat, i ve modified http_response.cc, so update before
+editiing your file (it will conflict with the previous modification
+made to release av; too, i remember you free av[], but don't
+do that since it appears to be a local variable:(release only
+the entries)).
+
+That's all for the moment, we will test implement the put
+request and then test it along with inputed cgi.
+
+Good week,
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060222/2b2842d2/attachment.html">https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060222/2b2842d2/attachment.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000109.html">[Ziahttpd-developers] Rapport sous win
+</A></li>
+	<LI>Next message: <A HREF="000111.html">[Ziahttpd-developers] zia advances
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#110">[ date ]</a>
+              <a href="thread.html#110">[ thread ]</a>
+              <a href="subject.html#110">[ subject ]</a>
+              <a href="author.html#110">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/ziahttpd-developers">More information about the Ziahttpd-developers
+mailing list</a><br>
+</body></html>

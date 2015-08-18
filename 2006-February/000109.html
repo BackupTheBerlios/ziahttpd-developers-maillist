@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Ziahttpd-developers] Rapport sous win
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/ziahttpd-developers/2006-February/index.html" >
+   <LINK REL="made" HREF="mailto:ziahttpd-developers%40lists.berlios.de?Subject=Re%3A%20%5BZiahttpd-developers%5D%20Rapport%20sous%20win&In-Reply-To=%3CBAY102-F286931AA9603C4E1292F8CE6FE0%40phx.gbl%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000108.html">
+   <LINK REL="Next"  HREF="000110.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Ziahttpd-developers] Rapport sous win</H1>
+    <B>Xavier Bigand</B> 
+    <A HREF="mailto:ziahttpd-developers%40lists.berlios.de?Subject=Re%3A%20%5BZiahttpd-developers%5D%20Rapport%20sous%20win&In-Reply-To=%3CBAY102-F286931AA9603C4E1292F8CE6FE0%40phx.gbl%3E"
+       TITLE="[Ziahttpd-developers] Rapport sous win">prof_ringo at hotmail.com
+       </A><BR>
+    <I>Sun Feb 19 23:48:24 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000108.html">[Ziahttpd-developers] Testing Zfs
+</A></li>
+        <LI>Next message: <A HREF="000110.html">[Ziahttpd-developers] Hi all
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#109">[ date ]</a>
+              <a href="thread.html#109">[ thread ]</a>
+              <a href="subject.html#109">[ subject ]</a>
+              <a href="author.html#109">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Les tests que j'ai effectue se sont fait sur une periode assez longue pour 
+tester le comportement du serveur dans de bonnes conditions, j'ai donc fais 
+plusieurs series de tests sans arreter le serveur entre chacune des 
+differentes phases.
+
+Le serveur a donc tourne de facon continue pendant pres de 4h, ceci n'a 
+affecte en rien sa stabilite et vitesse de reponse. Ma ca m'a permis de 
+faire d'autre constat en plus de confirmer les fuites de memoire que 
+provoque chacune des requetes qu'on lui envois (bonne ou mauvaise).
+J'ai d'abord commencer par lancer des requetents dans des threads (600) et 
+qui se suivent (100), dans ce cas malgres la quantite de connection 
+simultanee le serveur repond tres vite a mon sens et la memoire prise par la 
+creation des threads semble etre le seul frein. J'ai ensuite lancer 1000 
+thread dont 800 etaient des bonnes requetes et les auters des mauvais, mais 
+dans ce cas les scriptes tombent avant meme d'avoir creer tous les thread 
+(je ne sais pas combien on pu tourner en meme temps, mais sans doute plus de 
+300). Le serveur a cependant echoue sur certaines reponses (il semblerait 
+que les ressources prisent par le perl le destabilise legerement car quand 
+les requetes se suivent il echoue uniquement au debut le temps que la charge 
+monte).
+J'ai fait egalement d'autre tests dans le meme type qui n'indique rien de 
+plus.
+Pour finir j'ai balance 2 000 000 de requetes (bonnes) et la vitesse de 
+reponse est vraiment excellente, je n'ai pas chronometre car le perl semble 
+prendre la majorite des ressources ce qui penalise le serveur.
+
+psomon ne tournant pas sur ma machine j'ai utiliser gestionnaire des taches 
+de windows apres avoir pris le soin de virer tout programme supciptible de 
+fausser les resultats (variations de l'utilisation des ressources).
+
+Voila un petit recuptitulatif de l'etat de la memoire (que les etapes les 
+plus significatives):
+- 175,292 Mo avant le lancement du serveur
+- 177,120 Mo apres le lancement (que le serveur)
+- 181,572 Mo apres differents tests bases essentiellements sur les scriptes 
+qui threadent (j'ai pas calcule le nombre de connections)
+- 201,336 Mo apres 100 000 connections lancees a la suite
+- 218,888 Mo apres tentative de 1 000 threads et 100 000 a la suite, mais 
+perl tombe a 31 770 sur le script de lancement a la suite
+- 607,128 Mo apres 2 000 000 de requetes a la suite
+
+Apres calculs la fuite est d'environ 0,19412 Mo (2 000 000) - 0,19764 Mo 
+(100 000) par requete.
+
+PS : les fuites sont les memes que les requetes soient bonnes ou mauvaises 
+(les performances sont egalement identique)
+
+Si j'ai le temps demain je ferrais des tests chronometre en utilisant un 
+autre PC pour ne pas executer les scripts sur la meme machine que le 
+serveur.
+Je pense faire tourner le serveur sur un PIII 733Mhz et les scriptes sur ma 
+machine (AMD 3500+), je pense le faire dans ce sens car le perl consomme 
+plus que le serveur.
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000108.html">[Ziahttpd-developers] Testing Zfs
+</A></li>
+	<LI>Next message: <A HREF="000110.html">[Ziahttpd-developers] Hi all
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#109">[ date ]</a>
+              <a href="thread.html#109">[ thread ]</a>
+              <a href="subject.html#109">[ subject ]</a>
+              <a href="author.html#109">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/ziahttpd-developers">More information about the Ziahttpd-developers
+mailing list</a><br>
+</body></html>

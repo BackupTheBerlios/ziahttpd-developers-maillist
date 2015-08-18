@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Ziahttpd-developers] Logger
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/ziahttpd-developers/2005-December/index.html" >
+   <LINK REL="made" HREF="mailto:ziahttpd-developers%40lists.berlios.de?Subject=Re%3A%20%5BZiahttpd-developers%5D%20Logger&In-Reply-To=%3CBAY102-F27D2657293B8ABB17A52DE6370%40phx.gbl%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000081.html">
+   <LINK REL="Next"  HREF="000083.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Ziahttpd-developers] Logger</H1>
+    <B>Xavier Bigand</B> 
+    <A HREF="mailto:ziahttpd-developers%40lists.berlios.de?Subject=Re%3A%20%5BZiahttpd-developers%5D%20Logger&In-Reply-To=%3CBAY102-F27D2657293B8ABB17A52DE6370%40phx.gbl%3E"
+       TITLE="[Ziahttpd-developers] Logger">prof_ringo at hotmail.com
+       </A><BR>
+    <I>Tue Dec 27 16:53:21 CET 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000081.html">[Ziahttpd-developers] logger
+</A></li>
+        <LI>Next message: <A HREF="000083.html">[Ziahttpd-developers] logger
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#82">[ date ]</a>
+              <a href="thread.html#82">[ thread ]</a>
+              <a href="subject.html#82">[ subject ]</a>
+              <a href="author.html#82">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>It does not remain me which the class has to create to manage flows towards 
+files, that for the final one is already done.
+
+Before calling the function to write the message, it is necessary to record 
+flow to be used with the method SetFlow(int flag_level, ManageFlow &amp;);.
+
+To change flow, it is enough to point out this method, all the authorities 
+of flow will destroyed at the exit of the program (perhaps that with a smart 
+to point that tightened better).
+
+Here the abstract class:
+
+class public ManageFlow
+{
+public:
+    virtual bool Write(std::string sStr) = 0;
+};
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000081.html">[Ziahttpd-developers] logger
+</A></li>
+	<LI>Next message: <A HREF="000083.html">[Ziahttpd-developers] logger
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#82">[ date ]</a>
+              <a href="thread.html#82">[ thread ]</a>
+              <a href="subject.html#82">[ subject ]</a>
+              <a href="author.html#82">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/ziahttpd-developers">More information about the Ziahttpd-developers
+mailing list</a><br>
+</body></html>

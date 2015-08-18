@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Ziahttpd-developers] Testing Zfs
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/ziahttpd-developers/2006-February/index.html" >
+   <LINK REL="made" HREF="mailto:ziahttpd-developers%40lists.berlios.de?Subject=Re%3A%20%5BZiahttpd-developers%5D%20Testing%20Zfs&In-Reply-To=%3C6e55508d0602190909t3892c394y6bbfe8a690f2df65%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000107.html">
+   <LINK REL="Next"  HREF="000109.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Ziahttpd-developers] Testing Zfs</H1>
+    <B>Jean-Philippe BOSQUER</B> 
+    <A HREF="mailto:ziahttpd-developers%40lists.berlios.de?Subject=Re%3A%20%5BZiahttpd-developers%5D%20Testing%20Zfs&In-Reply-To=%3C6e55508d0602190909t3892c394y6bbfe8a690f2df65%40mail.gmail.com%3E"
+       TITLE="[Ziahttpd-developers] Testing Zfs">epidihax at gmail.com
+       </A><BR>
+    <I>Sun Feb 19 18:09:51 CET 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000107.html">[Ziahttpd-developers] Suivi 2
+</A></li>
+        <LI>Next message: <A HREF="000109.html">[Ziahttpd-developers] Rapport sous win
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#108">[ date ]</a>
+              <a href="thread.html#108">[ thread ]</a>
+              <a href="subject.html#108">[ subject ]</a>
+              <a href="author.html#108">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi all !!
+
+J ai fait des tests du zia sous linux. (dsl je n'ai pas pu en faire sous
+netbsd car je n'ai pas l'OS), et Xav va refaire des tests windows dans la
+soire
+(Linux)
+Resultats des tests:
+   -bad requests:  legere augmentation de memoire apres les requetes (l'une
+apres l'autre).
+                            moins d augmentation de memoire avec des
+threads.
+
+   -good requests:  les requetes differentes donnent tjs le meme resultats.
+                              legere augmentation de memoire.
+
+Petit probleme parfois aussi (aleatoire) que le serveur mette pas mal de
+temps a accepter la connection. C'est a dire on lance plusieurs threads de
+connection et le serveur met pas mal de temps et bouffe enormemement de CPU
+pour accepter les multiples requetes, mais ceci est aleatoire (Parfois il va
+traiter les requetes tres rapidements, et parfois il va mettre bcp de tps (c
+peut etre perl aussi qui gere mal les connections)).
+
+Voila pour les tests que j ai effectuer sous linux. Je retourne a l IA
+gomoku,
+
+bonne soiree a tous.
+
+--
+
+-----------~~=oOo=~~-----------
+BOSQUER Jean-Philippe
+{Epitech} / Arkema
+Mobile: 0661921939
+Mail: <A HREF="https://lists.berlios.de/mailman/listinfo/ziahttpd-developers">bosque_j at evabop.net</A>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060219/d89f7637/attachment.html">https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060219/d89f7637/attachment.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000107.html">[Ziahttpd-developers] Suivi 2
+</A></li>
+	<LI>Next message: <A HREF="000109.html">[Ziahttpd-developers] Rapport sous win
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#108">[ date ]</a>
+              <a href="thread.html#108">[ thread ]</a>
+              <a href="subject.html#108">[ subject ]</a>
+              <a href="author.html#108">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/ziahttpd-developers">More information about the Ziahttpd-developers
+mailing list</a><br>
+</body></html>

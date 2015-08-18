@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Ziahttpd-developers] Advances on ConfManager
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/ziahttpd-developers/2005-October/index.html" >
+   <LINK REL="made" HREF="mailto:ziahttpd-developers%40lists.berlios.de?Subject=Re%3A%20%5BZiahttpd-developers%5D%20Advances%20on%20ConfManager&In-Reply-To=%3CBAY102-F3776CABFA438C94DB1FB77E6740%40phx.gbl%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000033.html">
+   <LINK REL="Next"  HREF="000035.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Ziahttpd-developers] Advances on ConfManager</H1>
+    <B>Xavier Bigand</B> 
+    <A HREF="mailto:ziahttpd-developers%40lists.berlios.de?Subject=Re%3A%20%5BZiahttpd-developers%5D%20Advances%20on%20ConfManager&In-Reply-To=%3CBAY102-F3776CABFA438C94DB1FB77E6740%40phx.gbl%3E"
+       TITLE="[Ziahttpd-developers] Advances on ConfManager">prof_ringo at hotmail.com
+       </A><BR>
+    <I>Sun Oct 23 16:56:52 CEST 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000033.html">[Ziahttpd-developers] Advances on httpd
+</A></li>
+        <LI>Next message: <A HREF="000035.html">[Ziahttpd-developers] No HTML code in my message
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#34">[ date ]</a>
+              <a href="thread.html#34">[ thread ]</a>
+              <a href="subject.html#34">[ subject ]</a>
+              <a href="author.html#34">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>I prefere to write in french, sorry.
+
+Donc comme vous l'avez surement vu j'avais deja mis la definition (pas 
+forcement definitive) des balises qui serront utilisatbles dans les fichiers 
+de configuration. J'ai alors commence la creation de la class qui s'occupera 
+de tout charger. Par defaut la lib tinyXML n'utilise pas la STL il faut 
+l'activer a l'aide d'un petit define, ceci m'a toute fois pose des petits 
+problemes que je viens de resoudre (option de compilation de la lib), c'est 
+pourquoi je vais mettre deux versions (debug et release) de la lib compilee 
+avec le reste des docs.
+Aussi il est plus facile que je ne le penser de traiter les  balises dans 
+l'orde (surtout pour les boucles,...), il va donc faloir que je mette en 
+place un tableau de pointeurs sur fonction pour traiter les differents 
+elements correctement et avec un peu de recursivite et quelque for ca 
+devrais etre bon.
+
+Il y aura deux methodes principales pour acceder aux valeurs, l'une pour les 
+variable qui ne contienne qu'une valeur (retourne une string), l'autre pour 
+les variables qui contiennent plusieurs valeurs (retournera un vector).
+
+
+Donc ce soir (car la je fais la pause) je vais m'occuper de mettre en place 
+le tableau de pointeur histoire de gerer pour lundi soir les variables (les 
+boucles et les conditions c'est pour un tout petit peu plus tard) et biensur 
+les deux methodes principales (qui devraient etre juste un return).
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000033.html">[Ziahttpd-developers] Advances on httpd
+</A></li>
+	<LI>Next message: <A HREF="000035.html">[Ziahttpd-developers] No HTML code in my message
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#34">[ date ]</a>
+              <a href="thread.html#34">[ thread ]</a>
+              <a href="subject.html#34">[ subject ]</a>
+              <a href="author.html#34">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/ziahttpd-developers">More information about the Ziahttpd-developers
+mailing list</a><br>
+</body></html>

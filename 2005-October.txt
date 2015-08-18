@@ -1,0 +1,965 @@
+From texane at gmail.com  Wed Oct  5 00:18:13 2005
+From: texane at gmail.com (lementec fabien)
+Date: Wed, 5 Oct 2005 00:18:13 +0200
+Subject: [Ziahttpd-developers] build system
+Message-ID: <af0bb1020510041518i706e287ex58f7cbf7180fbe06@mail.gmail.com>
+
+Hi all,
+
+I have found a *clean* way to build across plateforms.
+More on this later, for the moment I lack informations on
+how to create a particular kind of makefile rule... I don't
+know yet wether it's possible or not, so I will see tomorrow.
+
+I keep you aware of the advances,
+
+fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051005/8c917942/attachment.html>
+
+From zapoutix at gmail.com  Wed Oct  5 14:47:29 2005
+From: zapoutix at gmail.com (Zapoutix)
+Date: Wed, 5 Oct 2005 14:47:29 +0200
+Subject: [Ziahttpd-developers] some example of client header
+Message-ID: <ddda69650510050547g1f856d74ha9099bcd516a31fb@mail.gmail.com>
+
+lynx
+
+default header without get/post variable
+
+GET / HTTP/1.1
+Host: localhost:8000
+User-Agent: Links (2.1pre17; Linux 2.6.13.1 <http://2.6.13.1> i686; 212x77)
+Accept: */*
+Accept-Charset: us-ascii, ISO-8859-1, ISO-8859-2, ISO-8859-3, ISO-8859-4,
+ISO-8859-5, ISO-8859-6, ISO-8859-7, ISO-8859-8, ISO-8859-9, ISO-8859-10,
+ISO-8859-13, ISO-8859-14, ISO-8859-15, ISO-8859-16, windows-1250,
+windows-1251, windows-1252, windows-1256, windows-1257, cp437, cp737, cp850,
+cp852, cp866, x-cp866-u, x-mac, x-mac-ce, x-kam-cs, koi8-r, koi8-u, koi8-ru,
+TCVN-5712, VISCII, utf-8
+Accept-Language: en, en;q=0.2, *;q=0.1
+Connection: Keep-Alive
+
+
+firefox without get/post variable
+
+GET / HTTP/1.1
+Host: localhost:8000
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.10)
+Gecko/20050917 Firefox/1.0.6
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9
+,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+
+
+firefox with get variables
+
+GET /?toto=yiyi&titi=f HTTP/1.1
+Host: localhost:8000
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.10)
+Gecko/20050917 Firefox/1.0.6
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9
+,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+
+
+
+
+firefox with get variables and space
+
+GET /?toto=yiyi&titi=%22fds%20fds%20fdsfsd%22 HTTP/1.1
+Host: localhost:8000
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.10)
+Gecko/20050917 Firefox/1.0.6
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9
+,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051005/0475e479/attachment.html>
+
+From zapoutix at gmail.com  Wed Oct  5 15:37:52 2005
+From: zapoutix at gmail.com (Zapoutix)
+Date: Wed, 5 Oct 2005 15:37:52 +0200
+Subject: [Ziahttpd-developers] Re: some example of client header
+In-Reply-To: <ddda69650510050547g1f856d74ha9099bcd516a31fb@mail.gmail.com>
+References: <ddda69650510050547g1f856d74ha9099bcd516a31fb@mail.gmail.com>
+Message-ID: <ddda69650510050637s5e92b597o556e6f682aa1ba9a@mail.gmail.com>
+
+for examples of HTTP request header and HTTP response header
+
+http://web-sniffer.net/
+
+
+
+On 10/5/05, Zapoutix <zapoutix at gmail.com> wrote:
+>
+> lynx
+>
+> default header without get/post variable
+>
+> GET / HTTP/1.1
+> Host: localhost:8000
+> User-Agent: Links (2.1pre17; Linux 2.6.13.1 <http://2.6.13.1> i686;
+> 212x77)
+> Accept: */*
+> Accept-Charset: us-ascii, ISO-8859-1, ISO-8859-2, ISO-8859-3, ISO-8859-4,
+> ISO-8859-5, ISO-8859-6, ISO-8859-7, ISO-8859-8, ISO-8859-9, ISO-8859-10,
+> ISO-8859-13, ISO-8859-14, ISO-8859-15, ISO-8859-16, windows-1250,
+> windows-1251, windows-1252, windows-1256, windows-1257, cp437, cp737, cp850,
+> cp852, cp866, x-cp866-u, x-mac, x-mac-ce, x-kam-cs, koi8-r, koi8-u, koi8-ru,
+> TCVN-5712, VISCII, utf-8
+> Accept-Language: en, en;q=0.2, *;q=0.1
+> Connection: Keep-Alive
+>
+>
+> firefox without get/post variable
+>
+> GET / HTTP/1.1
+> Host: localhost:8000
+> User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.10)
+> Gecko/20050917 Firefox/1.0.6
+> Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9
+> ,text/plain;q=0.8,image/png,*/*;q=0.5
+> Accept-Language: en-us,en;q=0.5
+> Accept-Encoding: gzip,deflate
+> Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+> Keep-Alive: 300
+> Connection: keep-alive
+>
+>
+> firefox with get variables
+>
+> GET /?toto=yiyi&titi=f HTTP/1.1
+> Host: localhost:8000
+> User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.10)
+> Gecko/20050917 Firefox/1.0.6
+> Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9
+> ,text/plain;q=0.8,image/png,*/*;q=0.5
+> Accept-Language: en-us,en;q=0.5
+> Accept-Encoding: gzip,deflate
+> Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+> Keep-Alive: 300
+> Connection: keep-alive
+>
+>
+>
+>
+> firefox with get variables and space
+>
+> GET /?toto=yiyi&titi=%22fds%20fds%20fdsfsd%22 HTTP/1.1
+> Host: localhost:8000
+> User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.10)
+> Gecko/20050917 Firefox/1.0.6
+> Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9
+> ,text/plain;q=0.8,image/png,*/*;q=0.5
+> Accept-Language: en-us,en;q=0.5
+> Accept-Encoding: gzip,deflate
+> Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+> Keep-Alive: 300
+> Connection: keep-alive
+>
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051005/471aedf6/attachment.html>
+
+From zapoutix at gmail.com  Wed Oct  5 15:42:43 2005
+From: zapoutix at gmail.com (Zapoutix)
+Date: Wed, 5 Oct 2005 15:42:43 +0200
+Subject: [Ziahttpd-developers] Re: some example of client header
+In-Reply-To: <ddda69650510050637s5e92b597o556e6f682aa1ba9a@mail.gmail.com>
+References: <ddda69650510050547g1f856d74ha9099bcd516a31fb@mail.gmail.com>
+	 <ddda69650510050637s5e92b597o556e6f682aa1ba9a@mail.gmail.com>
+Message-ID: <ddda69650510050642t766d63fah9961272b21a5b0ec@mail.gmail.com>
+
+http://www.jmarshall.com/easy/http/
+
+On 10/5/05, Zapoutix <zapoutix at gmail.com> wrote:
+>
+> for examples of HTTP request header and HTTP response header
+>
+> http://web-sniffer.net/
+>
+>
+>
+> On 10/5/05, Zapoutix <zapoutix at gmail.com> wrote:
+> >
+> > lynx
+> >
+> > default header without get/post variable
+> >
+> > GET / HTTP/1.1
+> > Host: localhost:8000
+> > User-Agent: Links (2.1pre17; Linux 2.6.13.1 <http://2.6.13.1> i686;
+> > 212x77)
+> > Accept: */*
+> > Accept-Charset: us-ascii, ISO-8859-1, ISO-8859-2, ISO-8859-3,
+> > ISO-8859-4, ISO-8859-5, ISO-8859-6, ISO-8859-7, ISO-8859-8, ISO-8859-9,
+> > ISO-8859-10, ISO-8859-13, ISO-8859-14, ISO-8859-15, ISO-8859-16,
+> > windows-1250, windows-1251, windows-1252, windows-1256, windows-1257, cp437,
+> > cp737, cp850, cp852, cp866, x-cp866-u, x-mac, x-mac-ce, x-kam-cs, koi8-r,
+> > koi8-u, koi8-ru, TCVN-5712, VISCII, utf-8
+> > Accept-Language: en, en;q=0.2, *;q=0.1
+> > Connection: Keep-Alive
+> >
+> >
+> > firefox without get/post variable
+> >
+> > GET / HTTP/1.1
+> > Host: localhost:8000
+> > User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.10)
+> > Gecko/20050917 Firefox/1.0.6
+> > Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9
+> > ,text/plain;q=0.8,image/png,*/*;q=0.5
+> > Accept-Language: en-us,en;q=0.5
+> > Accept-Encoding: gzip,deflate
+> > Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+> > Keep-Alive: 300
+> > Connection: keep-alive
+> >
+> >
+> > firefox with get variables
+> >
+> > GET /?toto=yiyi&titi=f HTTP/1.1
+> > Host: localhost:8000
+> > User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.10)
+> > Gecko/20050917 Firefox/1.0.6
+> > Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9
+> > ,text/plain;q=0.8,image/png,*/*;q=0.5
+> > Accept-Language: en-us,en;q=0.5
+> > Accept-Encoding: gzip,deflate
+> > Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+> > Keep-Alive: 300
+> > Connection: keep-alive
+> >
+> >
+> >
+> >
+> > firefox with get variables and space
+> >
+> > GET /?toto=yiyi&titi=%22fds%20fds%20fdsfsd%22 HTTP/1.1
+> > Host: localhost:8000
+> > User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.10)
+> > Gecko/20050917 Firefox/1.0.6
+> > Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9
+> > ,text/plain;q=0.8,image/png,*/*;q=0.5
+> > Accept-Language: en-us,en;q=0.5
+> > Accept-Encoding: gzip,deflate
+> > Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+> > Keep-Alive: 300
+> > Connection: keep-alive
+> >
+> >
+> >
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051005/b5bfd816/attachment.html>
+
+From texane at gmail.com  Mon Oct 10 12:41:17 2005
+From: texane at gmail.com (lementec fabien)
+Date: Mon, 10 Oct 2005 12:41:17 +0200
+Subject: [Ziahttpd-developers] Doxygen sample
+Message-ID: <af0bb1020510100341u1de91624td674967bc59606a9@mail.gmail.com>
+
+Hi all,
+
+In order to create class doccumentation, we are using
+the doxygen comment system. It is ported on gnu and windows
+environement, and seems to work well on both.
+
+We have chosen to only document class INTERFACES at THE END OF THE FILE,
+so don't bother with class attributes, and don't mix normal comments with
+doxygen ones.
+They are not for developpers.
+In brief, you only have to document public methods of your classes.
+You will found a header sample file on berlios along with the Doxyfile we
+are using
+for the zia project.
+
+In the future, Doxyfile will reside in the doc/ directory of the project,
+and will cover
+the src/ directory of the project.
+We will se later for a graphics of class dependencies, and generation of pdf
+files.
+For the moment, we are only generating html files.
+
+Remember: Always put doxygen comments at the end of your header files!
+
+The header file will be completed when the coding convention problem will be
+addressed.
+
+Have a nice day,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051010/1fcb53bf/attachment.html>
+
+From texane at gmail.com  Tue Oct 11 20:49:07 2005
+From: texane at gmail.com (lementec fabien)
+Date: Tue, 11 Oct 2005 20:49:07 +0200
+Subject: [Ziahttpd-developers] Re: Doxygen sample
+In-Reply-To: <af0bb1020510100341u1de91624td674967bc59606a9@mail.gmail.com>
+References: <af0bb1020510100341u1de91624td674967bc59606a9@mail.gmail.com>
+Message-ID: <af0bb1020510111149v621ae216ve40c060883c882b4@mail.gmail.com>
+
+Hi all,
+
+Don't forget the meeting tomorrow at 8hoo.
+
+Good night to all of you,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051011/f2309f89/attachment.html>
+
+From texane at gmail.com  Tue Oct 11 20:51:54 2005
+From: texane at gmail.com (lementec fabien)
+Date: Tue, 11 Oct 2005 20:51:54 +0200
+Subject: [Ziahttpd-developers] Meeting tomorrow at 8hoo
+Message-ID: <af0bb1020510111151y236c27uf5eaffb64f3f1c9e@mail.gmail.com>
+
+Hi all,
+
+Don't forget the meeting that is taking place tomorrow
+at 8hoo, in the Epitech's Hall.
+
+See you tomorrow,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051011/8e497cce/attachment.html>
+
+From zapoutix at gmail.com  Tue Oct 11 21:09:24 2005
+From: zapoutix at gmail.com (Zapoutix)
+Date: Tue, 11 Oct 2005 21:09:24 +0200
+Subject: [Ziahttpd-developers] Meeting tomorrow at 8hoo
+In-Reply-To: <af0bb1020510111151y236c27uf5eaffb64f3f1c9e@mail.gmail.com>
+References: <af0bb1020510111151y236c27uf5eaffb64f3f1c9e@mail.gmail.com>
+Message-ID: <ddda69650510111209k29a0617w829d9cb398c46461@mail.gmail.com>
+
+Yes, sorry and thank you for this important remark ;)
+
+Good night,
+
+Texane.
+
+On 10/11/05, Zapoutix <zapoutix at gmail.com> wrote:
+>
+> 8h00 pm ;)
+>
+> On 10/11/05, lementec fabien < texane at gmail.com> wrote:
+> >
+> > Hi all,
+> >
+> > Don't forget the meeting that is taking place tomorrow
+> > at 8hoo, in the Epitech's Hall.
+> >
+> > See you tomorrow,
+> >
+> > Fabien.
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051011/01119fde/attachment.html>
+
+From texane at gmail.com  Mon Oct 17 17:42:16 2005
+From: texane at gmail.com (lementec fabien)
+Date: Mon, 17 Oct 2005 17:42:16 +0200
+Subject: [Ziahttpd-developers] svn
+Message-ID: <af0bb1020510170842q8092f1na9d3adc2657a5488@mail.gmail.com>
+
+Hi zia developpers,
+
+I've just submitted zia source code on the svn, so that you can
+checkout it.
+Some advices:
+
+. Read the berlios developpers doccumentation to use the svn, don't forget
+for example to use svn+ssh:// style paths, as mentioned in the doc
+. To compile the project, change the line in the core/ Makefile
+. System api is not fully implemented, so don't complain about missing
+stuffs... You should nevertheless have a minimalistic server running on
+windows,
+not yet on unix.
+. Don't forget to set environement variables: PROJ_ROOT(to the source path
+of your directory), PROJ_SYSAPI(either posix or win32), PROJ_ENV (either gnu
+or windows).
+
+That's all for today, more on this later in the week.
+
+See you,
+
+Fabien
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051017/ae75c364/attachment.html>
+
+From epidihax at gmail.com  Wed Oct 19 10:55:00 2005
+From: epidihax at gmail.com (Jean-Philippe BOSQUER)
+Date: Wed, 19 Oct 2005 10:55:00 +0200
+Subject: [Ziahttpd-developers] Changement date reunion Zia
+Message-ID: <6e55508d0510190155p667abeb6hff89a44c21c13ac4@mail.gmail.com>
+
+Hi all,
+
+The meeting of sunday 23 october is deferred to monday 24 october in
+afternoon at 18h, because I will work in company monday morning.
+I hope it's possible for all.
+
+Thank.
+
+--
+-----------~~=oOo=~~-----------
+BOSQUER Jean-Philippe
+{Epitech} / Arkema
+Mobile: 0661921939
+Mail: bosque_j at evabop.net
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051019/b0c356c9/attachment.html>
+
+From epidihax at gmail.com  Wed Oct 19 13:51:26 2005
+From: epidihax at gmail.com (Jean-Philippe BOSQUER)
+Date: Wed, 19 Oct 2005 13:51:26 +0200
+Subject: [Ziahttpd-developers] Meeting
+Message-ID: <6e55508d0510190451p6adbeb19lb0afb03c2154c6b6@mail.gmail.com>
+
+Re hi all,
+
+so the meeting is deferred at monday 24 betwen 20h and 20h30, appointment in
+MID-LAB, it's alright for all.
+
+Thanks !!!
+
+--
+-----------~~=oOo=~~-----------
+BOSQUER Jean-Philippe
+{Epitech} / Arkema
+Mobile: 0661921939
+Mail: bosque_j at evabop.net
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051019/2554e6d5/attachment.html>
+
+From texane at gmail.com  Fri Oct 21 09:30:34 2005
+From: texane at gmail.com (lementec fabien)
+Date: Fri, 21 Oct 2005 09:30:34 +0200
+Subject: [Ziahttpd-developers] getting data from network
+Message-ID: <af0bb1020510210030m2a03476ctff0ddf167c8493e1@mail.gmail.com>
+
+Hi all,
+Just to let you know that the server only currently reads non binary data.
+
+See you,
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051021/3ab372d6/attachment.html>
+
+From texane at gmail.com  Fri Oct 21 15:09:52 2005
+From: texane at gmail.com (lementec fabien)
+Date: Fri, 21 Oct 2005 15:09:52 +0200
+Subject: [Ziahttpd-developers] informations
+Message-ID: <af0bb1020510210609i5751aa8ap82be2f15eef35bd9@mail.gmail.com>
+
+Hi all,
+
+I've recoded the datamanagement routines to retrieve network
+stream (http lines and binary data).
+I won't test anymore, and will wait for any of you who find a bug.
+For the moment, i have been testing with a large amount of data
+with a post request, and no memory leaks where found.
+
+I m to test it under windows now.
+
+Have a nice day,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051021/4258a073/attachment.html>
+
+From texane at gmail.com  Fri Oct 21 15:42:00 2005
+From: texane at gmail.com (lementec fabien)
+Date: Fri, 21 Oct 2005 15:42:00 +0200
+Subject: [Ziahttpd-developers] Interface for http message tranistion
+Message-ID: <af0bb1020510210642o22fa9e81ja7717bf778c435f1@mail.gmail.com>
+
+Mat,
+
+Concerning the message class, i would like to implements operator << and >>
+so that it can receive a http::stream(im coding it) as argument.
+We could do something like it:
+msg << stream;
+msg >> stream;
+
+Internally, the stream keep tracks of the status it is in; For instance,
+the stream can be in the status_line state, and the next time it's called,
+it will be in the headerline state.
+
+This will make the code cleaner.
+
+I'm implementing the http::stream class, and will see after for message
+operators << and >>.
+
+By,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051021/88c34c5c/attachment.html>
+
+From texane at gmail.com  Fri Oct 21 21:18:09 2005
+From: texane at gmail.com (lementec fabien)
+Date: Fri, 21 Oct 2005 21:18:09 +0200
+Subject: [Ziahttpd-developers] Hi all
+Message-ID: <af0bb1020510211218r4d61f527jcd5672e6794be466@mail.gmail.com>
+
+The week after this one(that's the first one of november), i won't be here,
+from monday... to vendredi.
+I will be here the week end i think, so let me know wether it's annoying.
+
+See you,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051021/241ba1ec/attachment.html>
+
+From texane at gmail.com  Sat Oct 22 01:40:23 2005
+From: texane at gmail.com (lementec fabien)
+Date: Sat, 22 Oct 2005 01:40:23 +0200
+Subject: [Ziahttpd-developers] Warning on windows
+Message-ID: <af0bb1020510211640m42755882h4472c53b3a638c1@mail.gmail.com>
+
+Hi all,
+
+Due to the fact windows api uses unsigned int instead of int, there are some
+warning at
+the compile time.
+Don't bother with them, I will fix it later.
+
+See you,
+
+Fabien
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051022/537d1f71/attachment.html>
+
+From texane at gmail.com  Sat Oct 22 01:42:34 2005
+From: texane at gmail.com (lementec fabien)
+Date: Sat, 22 Oct 2005 01:42:34 +0200
+Subject: [Ziahttpd-developers] Process creation
+Message-ID: <af0bb1020510211642r1441bb46mf45f52d56daaba39@mail.gmail.com>
+
+Hi all,
+
+I've lost a few code on unix, concerning process manipulation in sysapi.
+I'm to recode it tonight.
+Concerning windows, a new function is implemented, which will handle
+process creation and child stdout redirecction.
+
+More on unix later,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051022/f6929134/attachment.html>
+
+From texane at gmail.com  Sat Oct 22 02:20:41 2005
+From: texane at gmail.com (lementec fabien)
+Date: Sat, 22 Oct 2005 02:20:41 +0200
+Subject: [Ziahttpd-developers] process api
+Message-ID: <af0bb1020510211720v4e1da95do2d76cc358bb94ac0@mail.gmail.com>
+
+Some function have been implemented for the posix api regarding process
+part.
+It's not complete, but I will add some code as the needs raise.
+Have a sweat night,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051022/8ece4294/attachment.html>
+
+From texane at gmail.com  Sun Oct 23 10:12:08 2005
+From: texane at gmail.com (lementec fabien)
+Date: Sun, 23 Oct 2005 10:12:08 +0200
+Subject: [Ziahttpd-developers] Advances on httpd
+Message-ID: <af0bb1020510230112t38072751p1cad1d1540bd7c78@mail.gmail.com>
+
+Hi all,
+
+We are proud to annonce that ziahttpd can serve pages along
+as cgi scripts ;)
+This is yet very minimalistic, but works on both windows and unix
+without code modification.
+This doesn't yet handle POST cgi script.
+
+Have a nice day.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051023/5f71a070/attachment.html>
+
+From prof_ringo at hotmail.com  Sun Oct 23 16:56:52 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Sun, 23 Oct 2005 14:56:52 +0000
+Subject: [Ziahttpd-developers] Advances on ConfManager
+Message-ID: <BAY102-F3776CABFA438C94DB1FB77E6740@phx.gbl>
+
+I prefere to write in french, sorry.
+
+Donc comme vous l'avez surement vu j'avais deja mis la definition (pas 
+forcement definitive) des balises qui serront utilisatbles dans les fichiers 
+de configuration. J'ai alors commence la creation de la class qui s'occupera 
+de tout charger. Par defaut la lib tinyXML n'utilise pas la STL il faut 
+l'activer a l'aide d'un petit define, ceci m'a toute fois pose des petits 
+problemes que je viens de resoudre (option de compilation de la lib), c'est 
+pourquoi je vais mettre deux versions (debug et release) de la lib compilee 
+avec le reste des docs.
+Aussi il est plus facile que je ne le penser de traiter les  balises dans 
+l'orde (surtout pour les boucles,...), il va donc faloir que je mette en 
+place un tableau de pointeurs sur fonction pour traiter les differents 
+elements correctement et avec un peu de recursivite et quelque for ca 
+devrais etre bon.
+
+Il y aura deux methodes principales pour acceder aux valeurs, l'une pour les 
+variable qui ne contienne qu'une valeur (retourne une string), l'autre pour 
+les variables qui contiennent plusieurs valeurs (retournera un vector).
+
+
+Donc ce soir (car la je fais la pause) je vais m'occuper de mettre en place 
+le tableau de pointeur histoire de gerer pour lundi soir les variables (les 
+boucles et les conditions c'est pour un tout petit peu plus tard) et biensur 
+les deux methodes principales (qui devraient etre juste un return).
+
+
+
+
+From prof_ringo at hotmail.com  Sun Oct 23 17:03:33 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Sun, 23 Oct 2005 15:03:33 +0000
+Subject: [Ziahttpd-developers] No HTML code in my message
+Message-ID: <BAY102-F17DBED8932029A13F2B5CBE6740@phx.gbl>
+
+The previous message that i have juste send don't contain htmal code like 
+the other's. iI have use hotmail. And my message it's the only one who is 
+forward to me.
+
+see you.
+
+Xavier
+
+
+
+
+From texane at gmail.com  Sun Oct 23 21:40:27 2005
+From: texane at gmail.com (lementec fabien)
+Date: Sun, 23 Oct 2005 21:40:27 +0200
+Subject: [Ziahttpd-developers] buffer
+Message-ID: <af0bb1020510231240n71fdec8cue1a90d72a0915d91@mail.gmail.com>
+
+Hi all,
+
+As the project grows, the need for a good api to manipulate
+memory buffer is raising.
+For the moment, http::dataman::buffer is implemented,it's very
+minimalistic but the more you use it the more develop functionnalities.
+Since all memory moves will be centralized, it won't be leaks and
+memory corruption if the lib is used and debugged.
+So please, consider using it and report me any remarks.
+
+See you,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051023/bce8aeac/attachment.html>
+
+From texane at gmail.com  Mon Oct 24 11:58:23 2005
+From: texane at gmail.com (lementec fabien)
+Date: Mon, 24 Oct 2005 11:58:23 +0200
+Subject: [Ziahttpd-developers] adding two files to the project
+Message-ID: <af0bb1020510240258w63efd9d7t2491faac72a73c37@mail.gmail.com>
+
+Hello,
+
+Along with the buffer class added yesterday,
+two new classes will come around:
+
+http::dataman::uri
+http::dataman::resource
+
+The first one will handle naming convention for resources,
+that's it will take a configuration object as argument
+and translate the client wanted resource into a server
+valid one.
+For instance, it would translate / into index.html in the
+case the config file says it.
+
+The second one will handle resources, and will take
+care about internal representation (memory mapping or buffered...), actual
+name on the disk,
+permissions...
+so that the code is cleaner, and we are will be able to do optimization
+on the underlying resource storage(memory mapping, sharing between
+process...).
+Furthermore, it will containt a open like method, which will
+be filled by mat's parser. This method will call exec_cgi for
+instance if the resource pointed to by the uri is a cgi script.
+
+
+I am to implement an interface, and we wiil see together if it's ok for
+all of us at the meeting...
+
+See you,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051024/5a2a9ba9/attachment.html>
+
+From prof_ringo at hotmail.com  Mon Oct 24 13:46:31 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Mon, 24 Oct 2005 11:46:31 +0000
+Subject: [Ziahttpd-developers] news of ConfManager class
+Message-ID: <BAY102-F32435B612B9C75C9046679E6770@phx.gbl>
+
+This morning i have corrected fez bug on this class but only on paper 
+because i was in train. I have solved the pointeur bug and deleted a memory 
+leak.
+And i have some idea for interprete the conditions expression.
+
+see you to night.
+
+
+
+
+From prof_ringo at hotmail.com  Tue Oct 25 21:15:54 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Tue, 25 Oct 2005 19:15:54 +0000
+Subject: [Ziahttpd-developers] join sourceforge.net
+In-Reply-To: <af0bb1020510240258w63efd9d7t2491faac72a73c37@mail.gmail.com>
+Message-ID: <BAY102-F33D67FC28974AFC1BBA621E6760@phx.gbl>
+
+I have join the sourcefoge.net's communauty and now i can post on her forum 
+or dev for her (it's a dream but i have no time).
+Now i can solve few bug (simplifie protection code).
+ex : use 'Attribute("name", "");' it's more powerful that if and else 
+protection because this version of Attribute function don't return NULL, but 
+an empty string like ""
+
+I am searching for others block of code that i must protect.
+
+I think that tomorow all code can be entierely protected and "include" and 
+"reuqiere" balise should be op.
+
+The actual structure of file anylize is ready for support interactives 
+balises like "for" and "expression". I have set this structure today for 
+"list".
+
+I think that JP can do overloaded operator [] and = tomorow.
+
+
+I really want make an effecient and stable class.
+
+see you
+
+
+
+
+From vincimouse at gmail.com  Wed Oct 26 22:53:30 2005
+From: vincimouse at gmail.com (Vincimouse)
+Date: Wed, 26 Oct 2005 13:53:30 -0700
+Subject: [Ziahttpd-developers] "Fiche projet" - For the 1st soutenance
+Message-ID: <6c660c750510261353o64c9ab89j3ecd754467bec07a@mail.gmail.com>
+
+Hi all
+
+I have just finished the "Fiche projet" for the 1st soutenance.
+
+I put the pdf file in "docs" tabs then select the french section and you
+will see it.
+
+Now, I will make the class and sequence diagrams (so 2 diagrams who details
+the architecture of the project)
+like it said in the subject.
+I will install MS Visio 2003 tomorrow, to make the diagrams in UML.
+
+++
+
+PS: Don't forget to tell me if you would like to put some corrections in the
+"Fiche projet" or if I forgot something.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051026/f0c697e9/attachment.html>
+
+From texane at gmail.com  Wed Oct 26 23:22:53 2005
+From: texane at gmail.com (lementec fabien)
+Date: Wed, 26 Oct 2005 23:22:53 +0200
+Subject: [Ziahttpd-developers] Problems for making with vstudio
+Message-ID: <af0bb1020510261422o19da5ec3kc7afb4fea8fa8c45@mail.gmail.com>
+
+Hello all developers,
+
+Problems for making with visual was encountered this afternoon.
+They are now solved, along with the exceptions ones, so you can update the
+svn.
+Don't forget to never use langage extension provided by the microsoft
+compiler.
+
+'d night,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051026/e75ad222/attachment.html>
+
+From texane at gmail.com  Sat Oct 29 18:10:04 2005
+From: texane at gmail.com (lementec fabien)
+Date: Sat, 29 Oct 2005 18:10:04 +0200
+Subject: [Ziahttpd-developers] News for the project
+Message-ID: <af0bb1020510290910y605d1062vf243194fa49d2920@mail.gmail.com>
+
+Hi all,
+
+Im to go back home during the next week, so don't intend to see me.
+The week after this one, i m to implement the network base and see with
+mat for more consistant interfaces.
+If somebody want to do so, there will be some work about modules to do,
+such as designing an interface, seeing how apache works....
+
+Have a nice week,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051029/34d8d043/attachment.html>
+
+From texane at gmail.com  Sat Oct 29 21:41:42 2005
+From: texane at gmail.com (lementec fabien)
+Date: Sat, 29 Oct 2005 21:41:42 +0200
+Subject: [Ziahttpd-developers] Needs for a logging class
+Message-ID: <af0bb1020510291241t5022704r727629ee633e6ef6@mail.gmail.com>
+
+Hi all developpers,
+
+As the project grows, we need some kind of logging class.
+For instance, it would be nice to have a stream of the form
+
+clog << "event to log";
+with the appropriate modifiers, such as ones to set the output
+format, the output file...
+
+If someone want to do such a stream (or something equivalent),
+please do add a task on the project site.
+You may work by group of person if you want.
+
+The book thinking in C++ second ed. (it's freely downloadable)
+seems to be a good place to start from.
+
+Have a nice week end,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051029/2be7401c/attachment.html>
+
+From texane at gmail.com  Sun Oct 30 11:02:52 2005
+From: texane at gmail.com (lementec fabien)
+Date: Sun, 30 Oct 2005 11:02:52 +0100
+Subject: [Ziahttpd-developers] Some words on project sheet
+Message-ID: <af0bb1020510300202t51545fb6ve00420a3a3464ddb@mail.gmail.com>
+
+Hi,
+
+I've just read the project sheet written by vincent.
+Some words about it:
+[.] 1998... 7 years ago, and your data are out of date . Get more recent
+ones on apache usage.
+[.] IIs is portable ??
+[.] ortography mistakes, maybe we may correct it by reading the project
+sheet together next week end?
+[.] you don't focuse on the importance of the berlios infrastructure for the
+project developement(there is a svn, you don't mention it at all!), the
+importance of doxygen(misconception when you explain what doxygen is
+supposed to do... it doccument the project implementation and in our case
+the class API, nothing else)
+[.] speak about the task separation as they are marked on the berlios site,
+speak aboutour meeting.
+[.] maybe you should speak about soutenances...
+
+That's all for the moment ;)
+
+Try to correct those things, and other's remarks are welcome.
+
+I will come back next week end, so see you.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051030/0c592332/attachment.html>
+
+From vincimouse at gmail.com  Sun Oct 30 21:15:38 2005
+From: vincimouse at gmail.com (Vincimouse)
+Date: Sun, 30 Oct 2005 12:15:38 -0800
+Subject: [Ziahttpd-developers] Some words on project sheet
+In-Reply-To: <af0bb1020510300202t51545fb6ve00420a3a3464ddb@mail.gmail.com>
+References: <af0bb1020510300202t51545fb6ve00420a3a3464ddb@mail.gmail.com>
+Message-ID: <6c660c750510301215m4bf6daaft488b7b65cd2bdaf7@mail.gmail.com>
+
+On 10/30/05, lementec fabien <texane at gmail.com> wrote:
+>
+> Hi,
+>
+> I've just read the project sheet written by vincent.
+> Some words about it:
+> [OK] 1998... 7 years ago, and your data are out of date . Get more recent
+> ones on apache usage.
+> [OK] IIs is portable ??
+> [WAITING] ortography mistakes, maybe we may correct it by reading the
+> project sheet together next week end?
+> [OK] you don't focuse on the importance of the berlios infrastructure for
+> the project developement(there is a svn, you don't mention it at all!), the
+> importance of doxygen(misconception when you explain what doxygen is
+> supposed to do... it doccument the project implementation and in our case
+> the class API, nothing else)
+> [VERIFING] speak about the task separation as they are marked on the
+> berlios site, speak aboutour meeting.
+> [?] maybe you should speak about soutenances...Say something about what ?
+> When we will have a soutenance ? Is it mandatory ? .. huh... don't really,
+> what can i say about that ?!
+>
+> That's all for the moment ;)
+>
+> Try to correct those things, and other's remarks are welcome.
+
+
+
+I changed the pages: 3, 5, 6, 7, 8, and i add the summary. You can check it,
+in the tabs documentation, in the french part like the last time.
+
+I will come back next week end, so see you.
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051030/6f0133a5/attachment.html>
+

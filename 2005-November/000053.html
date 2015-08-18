@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Ziahttpd-developers] Information
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/ziahttpd-developers/2005-November/index.html" >
+   <LINK REL="made" HREF="mailto:ziahttpd-developers%40lists.berlios.de?Subject=Re%3A%20%5BZiahttpd-developers%5D%20Information&In-Reply-To=%3Caf0bb1020511061703r2e6bac84ne02eb2d9298ddb93%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000052.html">
+   <LINK REL="Next"  HREF="000054.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Ziahttpd-developers] Information</H1>
+    <B>lementec fabien</B> 
+    <A HREF="mailto:ziahttpd-developers%40lists.berlios.de?Subject=Re%3A%20%5BZiahttpd-developers%5D%20Information&In-Reply-To=%3Caf0bb1020511061703r2e6bac84ne02eb2d9298ddb93%40mail.gmail.com%3E"
+       TITLE="[Ziahttpd-developers] Information">texane at gmail.com
+       </A><BR>
+    <I>Mon Nov  7 02:03:35 CET 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000052.html">[Ziahttpd-developers] commentaire doxygen
+</A></li>
+        <LI>Next message: <A HREF="000054.html">[Ziahttpd-developers] Fwd: Reunion API ZIA
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#53">[ date ]</a>
+              <a href="thread.html#53">[ thread ]</a>
+              <a href="subject.html#53">[ subject ]</a>
+              <a href="author.html#53">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi all,
+
+I m developping the spool scheme for the zia server.
+According to soutenance feedbacks, the idea of having
+one thread managing a limited number of connections through
+the mean of io multiplexing works fine.
+In our implementation, there will be 100 threads managing 100 connections,
+thus a total of 10000 connections.
+This scheme is portable, and the implementation is not portable at the
+moment
+and have to be improved, but the design is fine (more on this later.)
+
+Tomorrow, the spool should be implemented for unix as a test, but won't be
+integrated
+to the server for the moment.... eventhough it shouldn't be too difficult,
+replacing our only
+thread by a thread of the spool.
+
+More on that tomorrow, in the night.
+
+Good night,
+
+Texane.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051107/3b34641b/attachment.html">https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051107/3b34641b/attachment.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000052.html">[Ziahttpd-developers] commentaire doxygen
+</A></li>
+	<LI>Next message: <A HREF="000054.html">[Ziahttpd-developers] Fwd: Reunion API ZIA
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#53">[ date ]</a>
+              <a href="thread.html#53">[ thread ]</a>
+              <a href="subject.html#53">[ subject ]</a>
+              <a href="author.html#53">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/ziahttpd-developers">More information about the Ziahttpd-developers
+mailing list</a><br>
+</body></html>

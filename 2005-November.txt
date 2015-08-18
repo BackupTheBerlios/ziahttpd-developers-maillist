@@ -1,0 +1,646 @@
+From prof_ringo at hotmail.com  Wed Nov  2 21:14:12 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Wed, 02 Nov 2005 20:14:12 +0000
+Subject: [Ziahttpd-developers] New folder on CVS
+Message-ID: <BAY102-F2712D112DDB366EA35A85BE66E0@phx.gbl>
+
+I have added a new folder on the CVS, now I don't have to use my rack at 
+home.
+And you can see my progression with the TODO.txt file. I have a lot of work 
+to do tomorrow, but I know it's possible if I do it at home.
+The implemented version of ConfManager is usable, but it's easier and faster 
+to dev in an independant project for me.
+This class is not very hard but i need to be concentrate for do it.
+
+I see you tomorow (I have a meeting at school)
+
+bye
+
+
+
+
+From vincimouse at gmail.com  Fri Nov  4 02:26:31 2005
+From: vincimouse at gmail.com (Vincimouse)
+Date: Fri, 4 Nov 2005 02:26:31 +0100
+Subject: [Ziahttpd-developers] About Fiche de projet beofre 08/11/05
+Message-ID: <6c660c750511031726i2ef5b7bby77e94b76bb92c36c@mail.gmail.com>
+
+Hi all
+ I ask some people who already passed theur "soutenance fiche projet". (like
+the groupe of crivis_s). They made average 9-10 pages for their fiche projet
+(c'est juste pour indiciation.. ca veut pas forcement dire qqch... bref)
+ He told me (dolean_j) that they didn't give them a grade for the ZIA
+project, but they gave a mark for their fiche project !!!
+ I think that my fiche projet is quite good, isn't it ? :)
+ But something that he told me was very important.... We must do a Gantt's
+diagramm. (very appreciated ! ...)
+And of course, the digramm of our class (like doxygen doing to the xmlLib
+.... very cool) and the diagramm of sequence (not complicated, i noted some
+example in the UML class)
+ So I hoped that everybody put the comment at the end of your file (the last
+time, i have juste found the tinyxml lib in doxygen (logical ^^))
+ Then, we have juste to print the documentation created by doxygen...not all
+of course, but an important part (qd m?me)
+ ++ good night ;)
+ PS: I will be at school saturday (and sunday)... In all manner, i will see
+texane this week-end... but don't forget to comment your CLASS and METHODs.
+ ZZZzzz...
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051104/1b6f093e/attachment.html>
+
+From prof_ringo at hotmail.com  Sat Nov  5 15:43:31 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Sat, 05 Nov 2005 14:43:31 +0000
+Subject: [Ziahttpd-developers] (no subject)
+Message-ID: <BAY102-F26222EBC1311253A5B08E1E6630@phx.gbl>
+
+I have just made an update the svn, I have add a documentation (note finish) 
+for users of the conf file, and I have made little modification on my code 
+to increase simplicity to adding futher features.
+I actualy begin to comment my code to generate the doxygen's documentation 
+for the developpers (you people).
+
+I have done the plant for implement condition expression and loop (for 
+futher), I must be able to start to code these features this afternoon. It 
+tightened possible to imbricate them between them.
+
+And I must to try clear a little my code, to avoid the redundancy.
+
+
+
+
+From prof_ringo at hotmail.com  Sat Nov  5 16:20:15 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Sat, 05 Nov 2005 15:20:15 +0000
+Subject: [Ziahttpd-developers] Doxygen
+Message-ID: <BAY102-F246E88B23F14A1ABE384FBE6630@phx.gbl>
+
+I'm comment my code for doxygen and I have add a doxygen directory with a 
+doxygen's configuration file on svn (I don't add generated file). Now every 
+body in our group can have the documentation of the code.
+
+see you
+
+
+
+
+From texane at gmail.com  Sun Nov  6 18:20:39 2005
+From: texane at gmail.com (lementec fabien)
+Date: Sun, 6 Nov 2005 18:20:39 +0100
+Subject: [Ziahttpd-developers] Re
+Message-ID: <af0bb1020511060920h71b314d0x40f3fc11b148af6a@mail.gmail.com>
+
+I m came back to paris, so see you soon.
+
+Have a nice night,
+
+Texane
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051106/049b119a/attachment.html>
+
+From prof_ringo at hotmail.com  Sun Nov  6 18:37:46 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Sun, 06 Nov 2005 17:37:46 +0000
+Subject: [Ziahttpd-developers] Petit point sur le ConfManager
+In-Reply-To: <af0bb1020511060920h71b314d0x40f3fc11b148af6a@mail.gmail.com>
+Message-ID: <BAY102-F120B28503FBC5E0464F9BFE6620@phx.gbl>
+
+Merci, (en francais car je suis vraiment fatigue)
+
+J'ai taffe pas mal ce weekend alors je pense que je vais bien dormir.
+J'en ai fait un peu plus que prevu, c'est a dire que les expressions (eval) 
+doivent etre entierement operationnelles (je ne vais pas les tester ce soir 
+mais il n'y a pas trop de risque). Il y a juste une petite fonction que 
+j'avais prevu de faire que je n'ai pas faite, mais bon elle est pas urgente.
+Le code actuelle va me permettre de gerer les boucles tres facilement (moins 
+de 15 lignes a ajouter).
+La facon dont j'ai decoupe la fonction de gestion des evaluations va me 
+permettre egalement de d'affecter le resultat a des variables (pratique pour 
+gerer les priorites sur les operateur 'and' et 'or').
+
+j'ai aussi commence la doc pour les utilisateurs du fichier de conf et la 
+generation avec doxygen (je vais encore rajouter des petits trucs ce soir 
+notement le graph)
+
+
+Je vais egalement reflechir a tout ce qui a rapport aux valeurs par defaut 
+(comme remplacer les valeurs incorrectes par celle par defaut), apres ca il 
+ne restera vraiment plus grand chose normalement.
+
+Voila bonne nuit a tous.
+
+
+>From: lementec fabien <texane at gmail.com>
+>To: ziahttpd-developers at lists.berlios.de
+>Subject: [Ziahttpd-developers] Re
+>Date: Sun, 6 Nov 2005 18:20:39 +0100
+>
+>I m came back to paris, so see you soon.
+>
+>Have a nice night,
+>
+>Texane
+
+
+
+
+From prof_ringo at hotmail.com  Sun Nov  6 21:14:10 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Sun, 06 Nov 2005 20:14:10 +0000
+Subject: [Ziahttpd-developers] commentaire doxygen
+Message-ID: <BAY102-F23B93B1528FF562AB46969E6620@phx.gbl>
+
+Voila j'ai pour ainsi dire fini de commenter mon .hh et je souhaiterais donc 
+qu'un personne qui est meilleur que moi en anglais me relise pour ne pas 
+faire tache a la soutenance. J'imprimerais la doc doxygen de ma classe que 
+demain soir donc.
+
+
+Sinon pour Vincement:
+Doxygen genere pas de graph pour ma classe car elle herite ou n'est herite 
+d'aucune autre pour l'instant (peut etre jamais). Sionon c'est qu'il y a un 
+truc que je n'ai pas compris, mais je pense que ca se fait automatiquement 
+ca.
+Et comme pour le momment cette classe n'est pas vraiment integree, on ne 
+doit pas pouvoir faire grand chose de plus.
+
+voila bonne nuit a tous.
+
+
+Xavier
+
+
+
+
+From texane at gmail.com  Mon Nov  7 02:03:35 2005
+From: texane at gmail.com (lementec fabien)
+Date: Mon, 7 Nov 2005 02:03:35 +0100
+Subject: [Ziahttpd-developers] Information
+Message-ID: <af0bb1020511061703r2e6bac84ne02eb2d9298ddb93@mail.gmail.com>
+
+Hi all,
+
+I m developping the spool scheme for the zia server.
+According to soutenance feedbacks, the idea of having
+one thread managing a limited number of connections through
+the mean of io multiplexing works fine.
+In our implementation, there will be 100 threads managing 100 connections,
+thus a total of 10000 connections.
+This scheme is portable, and the implementation is not portable at the
+moment
+and have to be improved, but the design is fine (more on this later.)
+
+Tomorrow, the spool should be implemented for unix as a test, but won't be
+integrated
+to the server for the moment.... eventhough it shouldn't be too difficult,
+replacing our only
+thread by a thread of the spool.
+
+More on that tomorrow, in the night.
+
+Good night,
+
+Texane.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051107/3b34641b/attachment.html>
+
+From zapoutix at gmail.com  Tue Nov  8 11:45:50 2005
+From: zapoutix at gmail.com (Zapoutix)
+Date: Tue, 8 Nov 2005 11:45:50 +0100
+Subject: [Ziahttpd-developers] Fwd: Reunion API ZIA
+In-Reply-To: <38436a970511080149u1d03df23md6641ddb4c6bd115@mail.gmail.com>
+References: <38436a970511080149u1d03df23md6641ddb4c6bd115@mail.gmail.com>
+Message-ID: <ddda69650511080245j5bf1acecx6ba8015314f4acd6@mail.gmail.com>
+
+On 11/8/05, Julien Duponchelle <julien.duponchelle at noplay.net> wrote:
+> Je propose de faire une r?union pour l'api ZIA le jeudi 17/11/2005 a 18H00.
+>
+>  Faite moi conna?tre vos dispos par ?crit.
+>
+>  Bonne journ?e.
+>
+
+
+From texane at gmail.com  Sun Nov 13 19:55:29 2005
+From: texane at gmail.com (lementec fabien)
+Date: Sun, 13 Nov 2005 19:55:29 +0100
+Subject: [Ziahttpd-developers] Hi
+Message-ID: <af0bb1020511131055u6470f7ebm506270d82751cb24@mail.gmail.com>
+
+Hi all,
+
+Zia code is in complete rebuilding, so try to not modify the code
+the code on the svn! It's very important: NOT FOLLOWING THIS RULE
+WILL MAKE THE CODE NOT INTEGRATED TO THE PROJECT!
+
+More on this the next meeting, that will be TOMOROW, so be PRESENT.
+
+Have a nice night,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051113/d5f1f3be/attachment.html>
+
+From texane at gmail.com  Mon Nov 14 15:28:27 2005
+From: texane at gmail.com (lementec fabien)
+Date: Mon, 14 Nov 2005 15:28:27 +0100
+Subject: [Ziahttpd-developers] tonight's meeting
+Message-ID: <af0bb1020511140628r114d948j4b87e7b50c53ee37@mail.gmail.com>
+
+Hi all,
+
+Next meeting to come has been scheduled to the november, the 14 th (tonight,
+as
+mentioned on berlios.), let's say 20hoo, as usual.
+
+Today we are to talk about zia migration.
+It's very important to be here, a presentation will
+be made to expose new ideas and implementation of the
+zia server, not yet present on the svn.
+
+We will gather ideas from JP and Xavier work on modules
+and cgi scripts, and will see how much Vincent has done on
+the logging class.
+
+It's very important to be here since we will see how the source
+code will be release on the svn, and who is to make which module,
+and issues related to configuration file.
+
+See you tonight,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051114/8c44c86f/attachment.html>
+
+From vincimouse at gmail.com  Mon Nov 14 19:43:07 2005
+From: vincimouse at gmail.com (Vincimouse)
+Date: Mon, 14 Nov 2005 19:43:07 +0100
+Subject: [Ziahttpd-developers] tonight's meeting
+In-Reply-To: <af0bb1020511140628r114d948j4b87e7b50c53ee37@mail.gmail.com>
+References: <af0bb1020511140628r114d948j4b87e7b50c53ee37@mail.gmail.com>
+Message-ID: <6c660c750511141043h27d5e894v9f55a2ff9d265668@mail.gmail.com>
+
+scuse i will have 10-15min of late. scuse
+
+On 11/14/05, lementec fabien <texane at gmail.com> wrote:
+>
+> Hi all,
+>
+> Next meeting to come has been scheduled to the november, the 14 th
+> (tonight, as
+> mentioned on berlios.), let's say 20hoo, as usual.
+>
+> Today we are to talk about zia migration.
+> It's very important to be here, a presentation will
+> be made to expose new ideas and implementation of the
+> zia server, not yet present on the svn.
+>
+> We will gather ideas from JP and Xavier work on modules
+> and cgi scripts, and will see how much Vincent has done on
+> the logging class.
+>
+> It's very important to be here since we will see how the source
+> code will be release on the svn, and who is to make which module,
+> and issues related to configuration file.
+>
+> See you tonight,
+>
+> Fabien.
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051114/93416b9a/attachment.html>
+
+From texane at gmail.com  Tue Nov 15 18:32:03 2005
+From: texane at gmail.com (lementec fabien)
+Date: Tue, 15 Nov 2005 18:32:03 +0100
+Subject: [Ziahttpd-developers] Sources available on the SVN
+Message-ID: <af0bb1020511150932s55445be3k257ecfb260e8bcb4@mail.gmail.com>
+
+Hi all,
+
+
+New sources of the project have been made available on the svn.
+The <b>NEW SOURCES TO USE FROM NOW</b> are present
+in the <b>branches/ziahttpd-mod/</b> directory.
+USE IT for now, older sources are no longer maintained! NO EXCEPTIONS
+are allowed, and the code you produce will be discarded if you continue
+to use the older src/ directory.
+
+A module creation how to is to be made available tonight in the svn doc/
+directory,
+so READ IT before doing something else.
+
+If you encountered problems, or have any question, report it on the
+mailling as soon as possible.
+
+see you,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051115/4c2f07ba/attachment.html>
+
+From texane at gmail.com  Wed Nov 16 14:32:37 2005
+From: texane at gmail.com (lementec fabien)
+Date: Wed, 16 Nov 2005 14:32:37 +0100
+Subject: [Ziahttpd-developers] Hi alll
+Message-ID: <af0bb1020511160532x5b4d658cpfac123566250882c@mail.gmail.com>
+
+Seems there are some problems on the subversion...
+If you encounter problems, tell on the mailling list.
+
+Fabien
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051116/7a1c6819/attachment.html>
+
+From texane at gmail.com  Wed Nov 16 14:47:47 2005
+From: texane at gmail.com (lementec fabien)
+Date: Wed, 16 Nov 2005 14:47:47 +0100
+Subject: [Ziahttpd-developers] Module programming howto
+Message-ID: <af0bb1020511160547r3d0e6596ldee6d67d0ca6fc39@mail.gmail.com>
+
+Hi all
+
+A very minimalistic file has been release on the svn,
+explaining - very briefly - how to develop modules for the zia server.
+It's important every one read it since it contains informations about module
+programming.
+Please report remark, misunderstanding, mistakes... you can find, so that
+we will improve this documentation for other people.
+This is VERY IMPORTANT.
+
+Have a nice day,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051116/bb9711e3/attachment.html>
+
+From prof_ringo at hotmail.com  Wed Nov 16 16:02:09 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Wed, 16 Nov 2005 15:02:09 +0000
+Subject: [Ziahttpd-developers] Meeting report
+Message-ID: <BAY102-F829BE0230872F8AC210B2E65C0@phx.gbl>
+
+I have made the report of previous meeting this night, wee can see it in 
+task on Berlios.
+
+see you
+
+
+
+
+From prof_ringo at hotmail.com  Sun Nov 20 14:00:40 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Sun, 20 Nov 2005 13:00:40 +0000
+Subject: [Ziahttpd-developers] ??? I don't know how name this subject lol
+Message-ID: <BAY102-F10064C1C5BC636480910A5E6500@phx.gbl>
+
+I have remove default construtor of ConfManager, but I have add a default 
+parameter for the current constructor, you can call it with any parameter 
+like the default constructor.
+ConfManager(char **av = NULL, const char &ConfFile = DEFAULT_FILE[0]);
+
+
+I actully work on parameters in line command and the others features that I 
+must add (see the meeting report).
+
+
+I will commit all changes in the end of this evening.
+
+
+
+see ya.
+
+
+
+
+From prof_ringo at hotmail.com  Sun Nov 20 14:58:50 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Sun, 20 Nov 2005 13:58:50 +0000
+Subject: [Ziahttpd-developers] Memory usage
+Message-ID: <BAY102-F36F38F0A17D22AB39A3CCE6500@phx.gbl>
+
+I have find a methode to reduce memory usage by ConfManager :
+Now I allocate dynamicly default all values and list of know balises. 
+because I think that all default values can take a little high memory. And 
+this information are needed only for configuration loading, it's may a 
+little slower but it's a better memory usage.
+
+
+
+
+From prof_ringo at hotmail.com  Sun Nov 20 16:59:37 2005
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Sun, 20 Nov 2005 15:59:37 +0000
+Subject: [Ziahttpd-developers] Some changes on memory management
+Message-ID: <BAY102-F1400061DAEA1DBA7E9ED4FE6500@phx.gbl>
+
+I have add a pointer on map for check easier bad var.
+Access to values is a little harder (ex : "(*_mSimpleData)["keys"]") and 
+memory leak are possible, but I have already set all deletion.
+
+
+
+
+From texane at gmail.com  Mon Nov 21 16:51:46 2005
+From: texane at gmail.com (lementec fabien)
+Date: Mon, 21 Nov 2005 16:51:46 +0100
+Subject: [Ziahttpd-developers] MODules
+Message-ID: <af0bb1020511210751ib682ff8laff24a79a6a42a4e@mail.gmail.com>
+
+All modules addition have to be requested BEFORE ANY ADDITION.
+Else, it will be deleted from the svn.
+
+Thx,
+
+Texane
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051121/6e90efd3/attachment.html>
+
+From texane at gmail.com  Mon Nov 21 16:52:55 2005
+From: texane at gmail.com (lementec fabien)
+Date: Mon, 21 Nov 2005 16:52:55 +0100
+Subject: [Ziahttpd-developers] name translation module
+Message-ID: <af0bb1020511210752k3a19cc51gd319bd4a317dc3aa@mail.gmail.com>
+
+The only name translation module is the nmtranslation one.
+Code if you want, but don't add any other for name translation operation.
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051121/372817e2/attachment.html>
+
+From texane at gmail.com  Mon Nov 21 16:55:35 2005
+From: texane at gmail.com (lementec fabien)
+Date: Mon, 21 Nov 2005 16:55:35 +0100
+Subject: [Ziahttpd-developers] module cgi added
+Message-ID: <af0bb1020511210755o61beff62sf375d567ea73fb7d@mail.gmail.com>
+
+The module cgi is added.
+Code it if you want.
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051121/48b4440b/attachment.html>
+
+From texane at gmail.com  Mon Nov 21 18:09:15 2005
+From: texane at gmail.com (lementec fabien)
+Date: Mon, 21 Nov 2005 18:09:15 +0100
+Subject: [Ziahttpd-developers] cgi module
+Message-ID: <af0bb1020511210909y22e9e0c6ya02d1ca7b531c75e@mail.gmail.com>
+
+Hi all,
+
+
+I m working on a basic cgi module that should work,
+to retrieve previous server features.
+
+We should build a list of server modules to program,
+and assign to a particular person on the task list on berlios.
+
+If somebody is willing to do that task, please post it.
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051121/44cf8648/attachment.html>
+
+From texane at gmail.com  Mon Nov 21 20:57:07 2005
+From: texane at gmail.com (lementec fabien)
+Date: Mon, 21 Nov 2005 20:57:07 +0100
+Subject: [Ziahttpd-developers] List of modules is now opened
+Message-ID: <af0bb1020511211157x712c9bdel177105fe9814f50b@mail.gmail.com>
+
+Hi,
+
+The task modules is now opened on the berlios; Fell
+free to add your own ideas, taking care if your module
+is already mentionned in the list.
+
+C u,
+
+fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051121/e407a5fe/attachment.html>
+
+From texane at gmail.com  Tue Nov 22 05:14:41 2005
+From: texane at gmail.com (lementec fabien)
+Date: Tue, 22 Nov 2005 05:14:41 +0100
+Subject: [Ziahttpd-developers] Debugging facility added
+Message-ID: <af0bb1020511212014o35b1b66as39a68f10693835d3@mail.gmail.com>
+
+A debugging facitliy has been added to the zia, but is
+still IN PROGRESS.
+At compile time, if the ENABLE_DEBUG_LOGGING
+macro is defined, it will output to cout stream.
+For an example of its usage, ask me, or see the file
+
+modules/net/main.cc
+include/debug/debug.hh
+
+If you have any idea to improve it, you are welcome.
+
+Furthermore, the to_string method has been
+added to buffer clas, so that you can stringify
+buffers and print them in nice ways (parametrable).
+
+Have a nice night,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051122/7de8a56b/attachment.html>
+
+From texane at gmail.com  Wed Nov 23 09:13:11 2005
+From: texane at gmail.com (lementec fabien)
+Date: Wed, 23 Nov 2005 09:13:11 +0100
+Subject: [Ziahttpd-developers] Scheduling
+Message-ID: <af0bb1020511230013r760ea190r843c510cae82e3df@mail.gmail.com>
+
+Hi all,
+
+As we can see, there are some (minimalistic) problems in the developement
+effort, due to bottleneck(goulo d etrangelement in french).
+So it's not bad, and even normal in computer programming projects, but we
+have to solve it.
+So today is dedicated to that.
+At the end of the morning, the configuration file should be integrated to
+the project.
+At the end of the day, the looping problem of the server should be "solved",
+in order
+for Mat(and actually every one else) to develop more easily. This would be
+nice if
+all module use the new io scheme, that's now part of the api (callback
+registering +
+io operations services.)
+Today, we also have to plan a meeting that should take place 10 days at
+least before
+the first defence.
+
+So see you today,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051123/ba014e92/attachment.html>
+
+From texane at gmail.com  Fri Nov 25 16:57:09 2005
+From: texane at gmail.com (lementec fabien)
+Date: Fri, 25 Nov 2005 16:57:09 +0100
+Subject: [Ziahttpd-developers] News for the project
+Message-ID: <af0bb1020511250757n4f8d96a6u8798861c3ff6a941@mail.gmail.com>
+
+Hi all,
+
+Some news from the front ;)
+So the api, as it is implemented by now, is to work great.
+The only think is to rebuild some part, but we will see later.
+The ssl module is concerned by that, so come to see me
+when you can.
+Concerning the module resource, mat wil reimplement it later.
+I will redact the draft for our api today, in english, so somebody
+has to translate it into french, and format the paper to make
+it more presentable to others (Vincent's role).
+Concerning the api, Crivis and consort group don't seem
+involved in the project(en gros ils sont la pour poser des questions (sur le
+projet
+ou non), mais pas pour participer; au developement de l api), so for the
+moment they don't know anything about the recent and very important changes
+made...
+
+So let's working and see at the beginning of the next week, where we
+should have a more complete draft.
+We will present the problems involved in the server, that's important
+for you to dev the ssl module.
+
+By,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051125/912c0e93/attachment.html>
+
+From texane at gmail.com  Fri Nov 25 18:03:09 2005
+From: texane at gmail.com (lementec fabien)
+Date: Fri, 25 Nov 2005 18:03:09 +0100
+Subject: [Ziahttpd-developers] draft available on SVN
+Message-ID: <af0bb1020511250903g1a0d10d3pa01297ff2d89ac1e@mail.gmail.com>
+
+Vincent,
+in the branches/ziahttpd-mod/design/notes you have a very beginning
+of the english draft.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20051125/3d2746d2/attachment.html>
+

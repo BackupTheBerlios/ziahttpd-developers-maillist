@@ -1,0 +1,69 @@
+From texane at gmail.com  Sat Mar  4 14:10:34 2006
+From: texane at gmail.com (lementec fabien)
+Date: Sat, 4 Mar 2006 14:10:34 +0100
+Subject: [Ziahttpd-developers] api available
+Message-ID: <af0bb1020603040510gdd453acld6556ca039902904@mail.gmail.com>
+
+Hi all,
+
+Api are now available on the intranet.
+Take a look at it, it s important to make
+the good choice.
+Dura's one is the one I think the best for
+us, so I encourage our team voting for it.
+Tell what u think about,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060304/08d92940/attachment.html>
+
+From epidihax at gmail.com  Sat Mar  4 18:07:56 2006
+From: epidihax at gmail.com (Jean-Philippe BOSQUER)
+Date: Sat, 4 Mar 2006 18:07:56 +0100
+Subject: [Ziahttpd-developers] api
+Message-ID: <6e55508d0603040907g2e02c498uf1228b780e73f5b6@mail.gmail.com>
+
+Hi,
+
+Ok, I have just read the APIs. I agree to vote for Dura's API.
+The Api is good and documentation too.
+
+--
+-----------~~=oOo=~~-----------
+BOSQUER Jean-Philippe
+{Epitech} / Arkema
+Mobile: 0661921939
+Mail: bosque_j at evabop.net
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060304/0b19fa8d/attachment.html>
+
+From zapoutix at gmail.com  Wed Mar 15 00:47:04 2006
+From: zapoutix at gmail.com (Zapoutix)
+Date: Wed, 15 Mar 2006 00:47:04 +0100
+Subject: [Ziahttpd-developers] Fwd: Presentation de l'API ZIIS
+In-Reply-To: <8fa1464d0603141153m237f4a57h646901295d24be89@mail.gmail.com>
+References: <8fa1464d0603141153m237f4a57h646901295d24be89@mail.gmail.com>
+Message-ID: <ddda69650603141547v100a7317h193b562cbb33c9df@mail.gmail.com>
+
+---------- Forwarded message ----------
+From: Guillaume Pouillet <guillaume.pouillet at epitech.net>
+Date: Mar 14, 2006 8:53 PM
+Subject: Presentation de l'API ZIIS
+
+
+Bonjour,
+
+Demain il y a une presentation des API zia a 14h, presente sur le planning.
+Le groupe ZIIS presentera son API. Toutes les questions sont les
+bienvenues. Nous presenterons les nouvelles fonctionnalitees obtenues
+de la fusion de plusieurs API.
+Nous esperons qu'il y aura le plus de monde possible.
+
+Bonne soiree,
+Le groupe ZIIS
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060315/e93818f1/attachment.html>
+

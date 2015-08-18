@@ -1,0 +1,244 @@
+From texane at gmail.com  Mon Jan  9 00:07:23 2006
+From: texane at gmail.com (lementec fabien)
+Date: Mon, 9 Jan 2006 00:07:23 +0100
+Subject: [Ziahttpd-developers] work
+Message-ID: <af0bb1020601081507k3fcba5b4u9728a8988f3a7638@mail.gmail.com>
+
+Hi all,
+
+In order to not get lost in the zia project,
+a meeting should be done.
+Tell the ml when you can attend a meeting,
+so that we can plan it.
+We will schedule our tasks and speak a bit
+about the project, since its stopped for the
+moment.
+Have a sweet night,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060109/94a1ef12/attachment.html>
+
+From epidihax at gmail.com  Mon Jan  9 13:45:41 2006
+From: epidihax at gmail.com (Jean-Philippe BOSQUER)
+Date: Mon, 9 Jan 2006 13:45:41 +0100
+Subject: [Ziahttpd-developers] Re: Work
+Message-ID: <6e55508d0601090445x40345281scc101ad216a798df@mail.gmail.com>
+
+Hi all !!
+
+For a meeting, I am available this week. I think that we can organize a
+meeting after the gomoku's defence.
+So the wednesday January 11 with 11h. But if somebody does not agree, we can
+take another date.
+
+Good day all.
+
+--
+-----------~~=oOo=~~-----------
+BOSQUER Jean-Philippe
+{Epitech} / Arkema
+Mobile: 0661921939
+Mail: bosque_j at evabop.net
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060109/da79c150/attachment.html>
+
+From texane at gmail.com  Tue Jan 17 13:23:40 2006
+From: texane at gmail.com (lementec fabien)
+Date: Tue, 17 Jan 2006 13:23:40 +0100
+Subject: [Ziahttpd-developers] News
+Message-ID: <af0bb1020601170423t5196f8d0t9f136d6bc41faa16@mail.gmail.com>
+
+Hi all,
+
+This week, we will be rethinking the resource model
+of the server, so that it will be able to handle much more
+functionnalities in a cleaner way than it's by now.
+So, this afternoon/this nigth, mat and I will work
+on it, and the next two days along with the week end
+will be used to implement the stuff.
+We will post new on the ml, so keep on reading.
+
+Have a good week,
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060117/9e0e7ed7/attachment.html>
+
+From epidihax at gmail.com  Fri Jan 20 15:36:52 2006
+From: epidihax at gmail.com (Jean-Philippe BOSQUER)
+Date: Fri, 20 Jan 2006 15:36:52 +0100
+Subject: [Ziahttpd-developers] Re News
+Message-ID: <6e55508d0601200636m1d5f9555rbe571a351a0fd5c8@mail.gmail.com>
+
+Hello !!!
+
+So for us (Vincent and me), we almost finished the tester, they remain us
+that the threads has to make.
+I start to make tests on the server and it was rather well, but it was
+simple tests.
+I would make more tests the next week when the threads are finished and I
+would make a report.
+
+Good week end all !!
+
+--
+-----------~~=oOo=~~-----------
+BOSQUER Jean-Philippe
+{Epitech} / Arkema
+Mobile: 0661921939
+Mail: bosque_j at evabop.net
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060120/a4af6547/attachment.html>
+
+From texane at gmail.com  Wed Jan 25 12:26:45 2006
+From: texane at gmail.com (lementec fabien)
+Date: Wed, 25 Jan 2006 12:26:45 +0100
+Subject: [Ziahttpd-developers] files to add in visual studio project
+Message-ID: <af0bb1020601250326s5ec918f9hda83dc79b4f5ca1e@mail.gmail.com>
+
+Some files will have to be added to the visual
+project (@see Makefile for a listing).
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060125/030a6f65/attachment.html>
+
+From texane at gmail.com  Wed Jan 25 17:12:47 2006
+From: texane at gmail.com (lementec fabien)
+Date: Wed, 25 Jan 2006 17:12:47 +0100
+Subject: [Ziahttpd-developers] added files
+Message-ID: <af0bb1020601250812s5e76666nd32ab3ce90e5500a@mail.gmail.com>
+
+Hi,
+
+Mat, you should see the session.cc file @ line 67
+or something like that, this is an implemention
+(not yet well tested, but you can work on it).
+It contains a readline so that you can begin
+your tests.
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060125/ca6ec8e0/attachment.html>
+
+From texane at gmail.com  Sat Jan 28 13:36:28 2006
+From: texane at gmail.com (lementec fabien)
+Date: Sat, 28 Jan 2006 13:36:28 +0100
+Subject: [Ziahttpd-developers] meeting
+Message-ID: <af0bb1020601280436m7e26eea7o25ee035da1b899b4@mail.gmail.com>
+
+Hi all,
+
+We should planned a meeting for the week to come,
+where we ll talk about recent progress in the zia and
+query each other what should be done to improve the
+testing phase, since the server is to become testable
+enough at the end of the week, in a limited way.
+
+That's all for the moment, tell when you are available.
+
+Have a nice day,
+Texane
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060128/b8fd5fe1/attachment.html>
+
+From vincimouse at gmail.com  Mon Jan 30 10:20:39 2006
+From: vincimouse at gmail.com (Vincimouse)
+Date: Mon, 30 Jan 2006 10:20:39 +0100
+Subject: [Ziahttpd-developers] meeting
+In-Reply-To: <af0bb1020601280436m7e26eea7o25ee035da1b899b4@mail.gmail.com>
+References: <af0bb1020601280436m7e26eea7o25ee035da1b899b4@mail.gmail.com>
+Message-ID: <6c660c750601300120j7bc44c82pb91bac970306acb3@mail.gmail.com>
+
+Wednesday at 4.00 PM ?
+Tuesday at 10.00AM or 5.00 PM ?
+
+On 1/28/06, lementec fabien <texane at gmail.com> wrote:
+>
+> Hi all,
+>
+> We should planned a meeting for the week to come,
+> where we ll talk about recent progress in the zia and
+> query each other what should be done to improve the
+> testing phase, since the server is to become testable
+> enough at the end of the week, in a limited way.
+>
+> That's all for the moment, tell when you are available.
+>
+> Have a nice day,
+> Texane
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060130/d952db40/attachment.html>
+
+From zapoutix at gmail.com  Mon Jan 30 11:52:29 2006
+From: zapoutix at gmail.com (Zapoutix)
+Date: Mon, 30 Jan 2006 11:52:29 +0100
+Subject: [Ziahttpd-developers] meeting
+In-Reply-To: <6c660c750601300120j7bc44c82pb91bac970306acb3@mail.gmail.com>
+References: <af0bb1020601280436m7e26eea7o25ee035da1b899b4@mail.gmail.com>
+	 <6c660c750601300120j7bc44c82pb91bac970306acb3@mail.gmail.com>
+Message-ID: <ddda69650601300252i504d1493weca923028ef805bb@mail.gmail.com>
+
+Wednesday at 4.00 PM is good for me
+
+On 1/30/06, Vincimouse <vincimouse at gmail.com> wrote:
+>
+> Wednesday at 4.00 PM ?
+> Tuesday at 10.00AM or 5.00 PM ?
+>
+> On 1/28/06, lementec fabien <texane at gmail.com> wrote:
+> >
+> > Hi all,
+> >
+> > We should planned a meeting for the week to come,
+> > where we ll talk about recent progress in the zia and
+> > query each other what should be done to improve the
+> > testing phase, since the server is to become testable
+> > enough at the end of the week, in a limited way.
+> >
+> > That's all for the moment, tell when you are available.
+> >
+> > Have a nice day,
+> > Texane
+> >
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060130/0b2cb411/attachment.html>
+
+From prof_ringo at hotmail.com  Mon Jan 30 13:47:50 2006
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Mon, 30 Jan 2006 12:47:50 +0000
+Subject: [Ziahttpd-developers] next meeting
+Message-ID: <BAY102-F36A3C06CAEAF56B59D0FFEE6090@phx.gbl>
+
+I am ok for all afternoons in this week.
+
+
+
+
+From epidihax at gmail.com  Mon Jan 30 21:48:44 2006
+From: epidihax at gmail.com (Jean-Philippe BOSQUER)
+Date: Mon, 30 Jan 2006 21:48:44 +0100
+Subject: [Ziahttpd-developers] meeting
+Message-ID: <6e55508d0601301248m563319efybfee33138da4b742@mail.gmail.com>
+
+It's ok for me Wednesday at 4.00 PM
+
+-----------~~=oOo=~~-----------
+BOSQUER Jean-Philippe
+{Epitech} / Arkema
+Mobile: 0661921939
+Mail: bosque_j at evabop.net
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060130/04293778/attachment.html>
+

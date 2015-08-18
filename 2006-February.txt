@@ -1,0 +1,521 @@
+From texane at gmail.com  Wed Feb  1 05:17:11 2006
+From: texane at gmail.com (lementec fabien)
+Date: Wed, 1 Feb 2006 05:17:11 +0100
+Subject: [Ziahttpd-developers] Report
+Message-ID: <af0bb1020601312017h3b9eac8akbe1160f80591129e@mail.gmail.com>
+
+Hi all,
+
+https://developer.berlios.de/docman/display_doc.php?docid=1391&group_id=4783
+This is the kind of stuff you should have
+to work on.
+
+We have recently worked on
+a system to test the server.
+This night i ve been testing with
+our system, and its somewhat helpful
+to find bugs and bottlenecks.
+So we would like the sytem to be
+improved by the tester.
+For instance, we have a tester
+in ziatester that can launch threads,
+so that you can test with 1000 connections
+or more, and see how the server reacts.
+If you want, you can launch the server
+with the psmon.x tools
+psmon.x ziafs.x
+and it will generate a out.html containing
+stats on various things, and it very useful.
+Work on this system, test the server (requests
+are not yet implemented but this is not a reason
+for non working).
+Feel free to mdify the code you want in testing tools,
+but it has to work...
+Tomorrow i don't know if i will be here physically at 4 hoo,
+i'd like to work during the nigth, but i will be connected via
+netsoul so the meeting has to be done, and we can speak
+via netsoul.
+
+Thiink about asking your questions, if any, by
+mail and prepare it for tomorrow.
+
+Have a nice day,
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060201/73ccfadc/attachment.html>
+
+From texane at gmail.com  Wed Feb  1 11:33:17 2006
+From: texane at gmail.com (lementec fabien)
+Date: Wed, 1 Feb 2006 11:33:17 +0100
+Subject: [Ziahttpd-developers] yop
+Message-ID: <af0bb1020602010233x6a472311jaa28233fb04bc5d2@mail.gmail.com>
+
+Finally i m being here
+at 4o'clock
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060201/8b378c39/attachment.html>
+
+From zapoutix at gmail.com  Fri Feb 10 18:59:01 2006
+From: zapoutix at gmail.com (Zapoutix)
+Date: Fri, 10 Feb 2006 18:59:01 +0100
+Subject: [Ziahttpd-developers] suivi 2
+Message-ID: <ddda69650602100959h24560fabge070f8549df05851@mail.gmail.com>
+
+Hi all
+we have the suivi 2 the 21/02/2006  at 14:00
+if something wrong with this date please tell me quickly.
+
+goodnight
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060210/55e89d81/attachment.html>
+
+From texane at gmail.com  Sat Feb 11 18:28:33 2006
+From: texane at gmail.com (lementec fabien)
+Date: Sat, 11 Feb 2006 18:28:33 +0100
+Subject: [Ziahttpd-developers] Adding files
+Message-ID: <af0bb1020602110928i1dcd68b0te22cb16f2f6952aa@mail.gmail.com>
+
+Due to the unix port, some file have been
+added to the makefile.
+For those compiling with visual studio, remember
+to add those files to the vcproj file.
+You should update before doing anything else,
+since modif have been done in all file in order to compile
+on netbsd.
+By,
+Fabien
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060211/05e27384/attachment.html>
+
+From texane at gmail.com  Mon Feb 13 08:17:11 2006
+From: texane at gmail.com (lementec fabien)
+Date: Mon, 13 Feb 2006 08:17:11 +0100
+Subject: [Ziahttpd-developers] Project
+Message-ID: <af0bb1020602122317y4b25f26r61825dc21f37950d@mail.gmail.com>
+
+Hi all,
+
+For the next defence, we have to
+present specification sheets.
+I won't personnaly work on it, and
+you have to choose someone.
+
+Bye,
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060213/3be73f87/attachment.html>
+
+From epidihax at gmail.com  Tue Feb 14 15:41:16 2006
+From: epidihax at gmail.com (Jean-Philippe BOSQUER)
+Date: Tue, 14 Feb 2006 15:41:16 +0100
+Subject: [Ziahttpd-developers] Re Projet
+Message-ID: <6e55508d0602140641m5662435cn89b9c2b0ecb5c71@mail.gmail.com>
+
+I will make the specification sheets for the next defence.
+
+++
+--
+
+-----------~~=oOo=~~-----------
+BOSQUER Jean-Philippe
+{Epitech} / Arkema
+Mobile: 0661921939
+Mail: bosque_j at evabop.net
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060214/9843caa8/attachment.html>
+
+From prof_ringo at hotmail.com  Thu Feb 16 21:42:35 2006
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Thu, 16 Feb 2006 20:42:35 +0000
+Subject: [Ziahttpd-developers] (no subject)
+Message-ID: <BAY102-F17E8E6C740CB697D135167E6FB0@phx.gbl>
+
+Voici les resultats de tests effectuees:
+
+Resultats des tests simples:
+- tests sur les mauvaises requetes:
+  - la quantite de memoire utilise ne diminue pas apres la requete, fuite de 
+memoire?
+
+  - Legere diminution de la memoire utilisee avec apres 1000 requetes (voir 
+bad02.html).
+
+  - Avec les threads la memoire augmente moins (pas a chaque requete) (voir 
+bad03.html). Mais les requetes arrivent de facon plus dispercee que quand 
+elles sont envoyees en boucle, le serveur est donc moins charge.
+
+
+Requete utilisee :
+test !!\r\n
+\r\n
+
+
+- tests sur les bonnes requetes :
+- Il se produit exxactement la meme chose avec les requetes GET, POST ou 
+HEAD
+
+Requete HEAD :
+HEAD / HTTP/1.0\r\n
+Host : 127.0.0.1:40000\r\n
+\r\n
+
+Requete POST :
+POST /index.php HTTP/1.1\r\n
+Host: localhost\r\n
+Content-Type: application/x-www-form-urlencoded\r\n
+Content-Length: 42\r\n
+\r\n
+
+Requete GET :
+GET http://localhost HTTP/1.0\r\n
+Accept : text/html\r\n
+if-Modified-Since : Saturday, 15-January-2000 14:37:11 GMT\r\n
+User-Agent : Mozilla/5.0 (compatible; MSIE 6.0; Windows NT)\r\n
+\r\n
+
+
+Test de charge :
+- lancement de 6 test good 2 (1000 requetes a la suites) + 2 test good 3 
+(300 thread)
+- Le serveur tiens bien la charge mais les tests sont un peu fosses  par 
+l'executions des scriptes sur la meme machine (perl bouffe trop de 
+ressources) (voir charge with good 2-3.html)
+
+
+
+
+J'ai note que psmon ne fonctionne pas sous 2000 probleme avec la dll 
+KERNELL32.dll
+c'est dommage car j'avais la possibilite de lancer les scriptes a partir de 
+plusieurs PC dont certain passant par le net, d'autant plus que les scriptes 
+en perl prennent enorment de ressources.
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060216/b9106515/attachment.html>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060216/b9106515/attachment-0001.html>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060216/b9106515/attachment-0002.html>
+
+From texane at gmail.com  Sat Feb 18 03:00:39 2006
+From: texane at gmail.com (lementec fabien)
+Date: Sat, 18 Feb 2006 03:00:39 +0100
+Subject: [Ziahttpd-developers] new server available
+Message-ID: <af0bb1020602171800h161feb54nae5b788796b78ad0@mail.gmail.com>
+
+Hi all,
+
+for those who are interested, a new
+server is available on the svn, @ branches/zfs.
+It's not yet user frendly but seems to be a little
+bit more efficient and stable than the previous ones.
+However, it has to be tested to improve the reliability.
+thus test it, test the stability and the load, benchmark it,
+do whatever you want on it.
+A linux version along with a bsd one should be available
+by the end of the nigth, and some leaks appearing on
+windows don't appear on those os...
+That's all for now,
+have a sweet nice,
+
+Texane.
+
+ps: don't forget the defence...
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060218/4e8abb4f/attachment.html>
+
+From texane at gmail.com  Sat Feb 18 04:40:10 2006
+From: texane at gmail.com (lementec fabien)
+Date: Sat, 18 Feb 2006 04:40:10 +0100
+Subject: [Ziahttpd-developers] hi
+Message-ID: <af0bb1020602171940ha9ba94cpe3272f10bf2249ce@mail.gmail.com>
+
+Hi all,
+We have a new version of the server implementing file sending.
+It works on windows, linux, but is not yet tested on netbsd, since
+no access at the moment.
+Its a testing version, don't hesitate to report bugs.
+Texane
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060218/155a8ae6/attachment.html>
+
+From texane at gmail.com  Sat Feb 18 12:33:14 2006
+From: texane at gmail.com (lementec fabien)
+Date: Sat, 18 Feb 2006 12:33:14 +0100
+Subject: [Ziahttpd-developers] Work
+Message-ID: <af0bb1020602180333r7fea2b1crcfde86fbb7d7c6b8@mail.gmail.com>
+
+Hi all,
+
+as the cgi process is to be ready in a near future, it would be cool to have
+a directory
+listing cgi that display nice directory listing page, both on unix and
+windows.
+A one is already done, (see the branches/ziahttpd-mod/cgi-bin/ directory, or
+something like that)
+to our previous example.
+Bye,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060218/572ae76c/attachment.html>
+
+From texane at gmail.com  Sat Feb 18 15:05:28 2006
+From: texane at gmail.com (lementec fabien)
+Date: Sat, 18 Feb 2006 15:05:28 +0100
+Subject: [Ziahttpd-developers] cgi support
+Message-ID: <af0bb1020602180605r5cfb1433vac3bed131a037536@mail.gmail.com>
+
+Hi all,
+
+We are working on cgi support on the server.
+Currently, we don't support cgi  but it should come
+in the nigth.
+In the test/cgi-bin/ directory, there is the necessary to build
+and test cgi, so if you plan to build you own cgi,
+put it in the directory so that we can test it with
+the server.
+
+That's all for the moment,
+
+Fabien.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060218/5f9c363e/attachment.html>
+
+From zapoutix at gmail.com  Sun Feb 19 12:04:25 2006
+From: zapoutix at gmail.com (Zapoutix)
+Date: Sun, 19 Feb 2006 12:04:25 +0100
+Subject: [Ziahttpd-developers] Suivi 2
+Message-ID: <ddda69650602190304l53a3c57dw6c83f0d251c2c28c@mail.gmail.com>
+
+Hi all
+reminder we have the "Suivi 2" next Tuesday (21/02/2006) at 14:00, don't be
+late.
+I hope someone wrote the specification sheets...
+
+Have a nice sunday
+Math
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060219/4fbf25b4/attachment.html>
+
+From epidihax at gmail.com  Sun Feb 19 18:09:51 2006
+From: epidihax at gmail.com (Jean-Philippe BOSQUER)
+Date: Sun, 19 Feb 2006 18:09:51 +0100
+Subject: [Ziahttpd-developers] Testing Zfs
+Message-ID: <6e55508d0602190909t3892c394y6bbfe8a690f2df65@mail.gmail.com>
+
+Hi all !!
+
+J ai fait des tests du zia sous linux. (dsl je n'ai pas pu en faire sous
+netbsd car je n'ai pas l'OS), et Xav va refaire des tests windows dans la
+soire
+(Linux)
+Resultats des tests:
+   -bad requests:  legere augmentation de memoire apres les requetes (l'une
+apres l'autre).
+                            moins d augmentation de memoire avec des
+threads.
+
+   -good requests:  les requetes differentes donnent tjs le meme resultats.
+                              legere augmentation de memoire.
+
+Petit probleme parfois aussi (aleatoire) que le serveur mette pas mal de
+temps a accepter la connection. C'est a dire on lance plusieurs threads de
+connection et le serveur met pas mal de temps et bouffe enormemement de CPU
+pour accepter les multiples requetes, mais ceci est aleatoire (Parfois il va
+traiter les requetes tres rapidements, et parfois il va mettre bcp de tps (c
+peut etre perl aussi qui gere mal les connections)).
+
+Voila pour les tests que j ai effectuer sous linux. Je retourne a l IA
+gomoku,
+
+bonne soiree a tous.
+
+--
+
+-----------~~=oOo=~~-----------
+BOSQUER Jean-Philippe
+{Epitech} / Arkema
+Mobile: 0661921939
+Mail: bosque_j at evabop.net
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060219/d89f7637/attachment.html>
+
+From prof_ringo at hotmail.com  Sun Feb 19 23:48:24 2006
+From: prof_ringo at hotmail.com (Xavier Bigand)
+Date: Sun, 19 Feb 2006 22:48:24 +0000
+Subject: [Ziahttpd-developers] Rapport sous win
+Message-ID: <BAY102-F286931AA9603C4E1292F8CE6FE0@phx.gbl>
+
+Les tests que j'ai effectue se sont fait sur une periode assez longue pour 
+tester le comportement du serveur dans de bonnes conditions, j'ai donc fais 
+plusieurs series de tests sans arreter le serveur entre chacune des 
+differentes phases.
+
+Le serveur a donc tourne de facon continue pendant pres de 4h, ceci n'a 
+affecte en rien sa stabilite et vitesse de reponse. Ma ca m'a permis de 
+faire d'autre constat en plus de confirmer les fuites de memoire que 
+provoque chacune des requetes qu'on lui envois (bonne ou mauvaise).
+J'ai d'abord commencer par lancer des requetents dans des threads (600) et 
+qui se suivent (100), dans ce cas malgres la quantite de connection 
+simultanee le serveur repond tres vite a mon sens et la memoire prise par la 
+creation des threads semble etre le seul frein. J'ai ensuite lancer 1000 
+thread dont 800 etaient des bonnes requetes et les auters des mauvais, mais 
+dans ce cas les scriptes tombent avant meme d'avoir creer tous les thread 
+(je ne sais pas combien on pu tourner en meme temps, mais sans doute plus de 
+300). Le serveur a cependant echoue sur certaines reponses (il semblerait 
+que les ressources prisent par le perl le destabilise legerement car quand 
+les requetes se suivent il echoue uniquement au debut le temps que la charge 
+monte).
+J'ai fait egalement d'autre tests dans le meme type qui n'indique rien de 
+plus.
+Pour finir j'ai balance 2 000 000 de requetes (bonnes) et la vitesse de 
+reponse est vraiment excellente, je n'ai pas chronometre car le perl semble 
+prendre la majorite des ressources ce qui penalise le serveur.
+
+psomon ne tournant pas sur ma machine j'ai utiliser gestionnaire des taches 
+de windows apres avoir pris le soin de virer tout programme supciptible de 
+fausser les resultats (variations de l'utilisation des ressources).
+
+Voila un petit recuptitulatif de l'etat de la memoire (que les etapes les 
+plus significatives):
+- 175,292 Mo avant le lancement du serveur
+- 177,120 Mo apres le lancement (que le serveur)
+- 181,572 Mo apres differents tests bases essentiellements sur les scriptes 
+qui threadent (j'ai pas calcule le nombre de connections)
+- 201,336 Mo apres 100 000 connections lancees a la suite
+- 218,888 Mo apres tentative de 1 000 threads et 100 000 a la suite, mais 
+perl tombe a 31 770 sur le script de lancement a la suite
+- 607,128 Mo apres 2 000 000 de requetes a la suite
+
+Apres calculs la fuite est d'environ 0,19412 Mo (2 000 000) - 0,19764 Mo 
+(100 000) par requete.
+
+PS : les fuites sont les memes que les requetes soient bonnes ou mauvaises 
+(les performances sont egalement identique)
+
+Si j'ai le temps demain je ferrais des tests chronometre en utilisant un 
+autre PC pour ne pas executer les scripts sur la meme machine que le 
+serveur.
+Je pense faire tourner le serveur sur un PIII 733Mhz et les scriptes sur ma 
+machine (AMD 3500+), je pense le faire dans ce sens car le perl consomme 
+plus que le serveur.
+
+
+
+
+From texane at gmail.com  Wed Feb 22 16:57:12 2006
+From: texane at gmail.com (lementec fabien)
+Date: Wed, 22 Feb 2006 16:57:12 +0100
+Subject: [Ziahttpd-developers] Hi all
+Message-ID: <af0bb1020602220757p45f8580jb98a51ba46af8793@mail.gmail.com>
+
+For thoses interested in working on the project, here
+are some topics:
+1) we have implemented a kind of cgi support, and the
+directory listing is to be done via a simple cgi script
+that turns a directory(for example "toto/") into a browsable
+html page. Currently, it's very minimalist, but if someone
+wants to improve it, let me know and i will tell you how
+to do(via the ml): It s very easy to implement and very useful,
+so...
+2)using ssh, try to do a test that connect on other machine
+and load the server with connection. Then notes the number
+of client connected, the number of time a request takes to
+success...
+
+
+For mat, i ve modified http_response.cc, so update before
+editiing your file (it will conflict with the previous modification
+made to release av; too, i remember you free av[], but don't
+do that since it appears to be a local variable:(release only
+the entries)).
+
+That's all for the moment, we will test implement the put
+request and then test it along with inputed cgi.
+
+Good week,
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060222/2b2842d2/attachment.html>
+
+From texane at gmail.com  Thu Feb 23 03:13:46 2006
+From: texane at gmail.com (lementec fabien)
+Date: Thu, 23 Feb 2006 03:13:46 +0100
+Subject: [Ziahttpd-developers] zia advances
+Message-ID: <af0bb1020602221813l73814a40h4e8937fcb25953b2@mail.gmail.com>
+
+Hi,
+
+Today have been implemented the post support
+(all os have been tested, linux omitted but should
+work on it).
+I've just implemented the put support, but not yet
+tested(next task on my todo list).
+By now, the server implements all the basic things
+we need, so that we have to test it until the api is
+done. The basic structure should not change, unless
+the api lead us to do so.
+Have a sweet nice, and don't forget that all work and
+tool developped(even just for fun) may improve our
+final grade(I think testing software are very sparse ones,
+and Ares mentionned it during the last defence).
+That's all for now.
+
+texane
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060223/368cbfba/attachment.html>
+
+From epidihax at gmail.com  Thu Feb 23 15:34:20 2006
+From: epidihax at gmail.com (Jean-Philippe BOSQUER)
+Date: Thu, 23 Feb 2006 15:34:20 +0100
+Subject: [Ziahttpd-developers] Script CGI
+Message-ID: <6e55508d0602230634n7d58aa4ey7a9c917475085391@mail.gmail.com>
+
+Hi all !!
+
+I want to improve well the directory listing, so I will work above.
+
+Thanks, Have a nice day. ++
+
+--
+
+-----------~~=oOo=~~-----------
+BOSQUER Jean-Philippe
+{Epitech} / Arkema
+Mobile: 0661921939
+Mail: bosque_j at evabop.net
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060223/6e358dce/attachment.html>
+
+From texane at gmail.com  Sun Feb 26 20:19:01 2006
+From: texane at gmail.com (lementec fabien)
+Date: Sun, 26 Feb 2006 20:19:01 +0100
+Subject: [Ziahttpd-developers] dir listing
+Message-ID: <af0bb1020602261119v39d06af8p4441a3f143c446c1@mail.gmail.com>
+
+ok that's fine, but try to round the
+size at a 4kb greater multiple, else
+there are empty docs.
+that's nice otherwise.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <https://lists.berlios.de/pipermail/ziahttpd-developers/attachments/20060226/c614adb6/attachment.html>
+
